@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.	org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Media</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "1000px",
+		height: "303px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="index.htm">Racing Vet</a></h1>
+        <ul>
+        	<li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </div><!-- END #header -->
+    
+    <div class="branding branding-media">
+        <div id="slides">
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Extra. extra. read all about it!</h3>
+                    <p>To keep up with the latest Racing Vet news, don’t forget to follow us on Twitter and like us on Facebook.</p>
+                </div>
+                <img src="images/branding_media.jpg" width="1000" height="303" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Extra. extra. read all about it!</h3>
+                    <p>To keep up with the latest Racing Vet news, don’t forget to follow us on Twitter and like us on Facebook.</p>
+                </div>
+                <img src="images/branding_media.jpg" width="1000" height="303" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Extra, extra, read all about it!</h3>
+                    <p>To keep up with the latest Racing Vet news, don’t forget to follow us on Twitter and like us on Facebook.</p>
+                </div>
+                <img src="images/branding_media.jpg" width="1000" height="303" alt="" />
+            </div>
+        </div>
+            
+        <div id="myController" class="clearfix">
+            <span class="jFlowPrev">Prev</span>
+            <span class="jFlowControl">1</span>
+            <span class="jFlowControl">2</span>
+            <span class="jFlowControl">3</span>
+            <span class="jFlowNext">Next</span>
+        </div>            
+    </div><!-- END .branding -->
+    
+    <div class="content content-media clearfix">
+    	<div class="main clearfix">
+        	<div class="col-one clearfix">
+            	<h2>Latest News</h2>
+                <div class="col-left">
+                	<img src="images/image_placeholder.png" width="226" height="140" alt="" />
+                </div>
+                <div class="col-right">
+                	<h3><a href="#">Extra, extra, read all about it!</a></h3>
+                    <p>Racing Vet is on Twitter and Facebook! The best way keeping up with the latest Racing Vet news, don’t forget to follow us on Twitter &amp; Facbook! <a href="#">about 2 minutes ago from Racing Vet via facebook</a></p>
+                </div>
+                <div class="col-left socials">
+                	<h4>Facebook</h4>
+                    <p>Racing Vet sis on Facebook! The best way keeping up with the latest Racing Vet news, don’t forget to follow us on Facbook <a href="#">about 2 minutes ago from Racing Vet</a></p>
+                    <p>Nobit ute maio to ende et abor alitas re velenis esequun tibusam audamet quis ex eatur alique is etur accus. <a href="#">about 5 minutes ago from Racing Vet</a></p>
+                </div>
+                <div class="col-right socials">
+                	<h4>Twitter</h4>
+                    <p>Racing Vet is on Facebook! The best way keeping up with the latest Racing Vet news, don’t forget to follow us on Facbook <a href="#">about 2 minutes ago from Racing Vet</a></p>
+                    <p>Nobit ute maio to ende et abor alitas re velenis esequun tibusam audamet quis ex eatur alique is etur accus. <a href="#">about 5 minutes ago from Racing Vet</a></p>
+                </div>
+            </div>
+            
+            <div class="col-two">
+                <h3>About</h3>
+                <ul class="side-menu">
+                    <li class="current"><a href="#">Latest News</a></li>
+                    <li><a href="#">Subscriptions</a></li>
+                    <li><a href="#">Newsletters</a></li>
+                </ul>
+                <hr />
+                <p class="socials">
+                	<a href="#" class="fb">Join us on Facebook</a>
+                    <a href="#" class="tw">Follow us on Twitter</a>
+                </p>
+                <hr />
+            </div>
+        </div>
+        
+        <div class="sidebar">
+        	<div class="topics">
+                <h3>Topics</h3>
+                <ul>
+                	<li class="current"><a href="#">Nobit ute maio to ende et abor alitas re velenis esequun</a></li>
+                    <li><a href="#">Nobit ute maio to ende et abor alitas re velenis esequun</a></li>
+                    <li><a href="#">Nobit ute maio to ende et abor alitas re velenis esequun</a></li>
+                </ul>
+			</div>
+            <div class="archive">
+            	<h3>Archived</h3>
+                <ul>
+                	<li class="current"><a href="#">- Jul 2011</a></li>
+                    <li><a href="#">- Jun 2011</a></li>
+                    <li><a href="#">- May 2011</a></li>
+                    <li><a href="#">- Apr 2011</a></li>
+                </ul>
+                <hr />
+            </div>
+        </div>
+    </div><!-- END .content -->
+    
+    <div id="footer">
+    	<ul>
+        	<li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop Online</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="#">Term &amp; Condition of use</a></li>
+            <li><a href="#">Privacy Disclaimer</a></li>
+        </ul>
+        <p>
+        	&copy; 2011 Racing Vet | Proudly Australian Made.
+            <a href="#"><img src="images/social_icon_fb.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_tw.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_rss.png" width="25" height="25" alt="" /></a>
+        </p>
+    </div>
+    
+</div><!-- END #wrapper -->
+
+</body>
+</html>

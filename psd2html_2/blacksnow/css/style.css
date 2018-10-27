@@ -1,0 +1,308 @@
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+/*
+    Global Style (Used throughout the site)
+    ========================================================================== */
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #000 url(../images/page_bg.jpg) no-repeat center top;
+	font: normal 12px Arial, Helvetica, sans-serif;
+	line-height: normal;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+
+a {
+	color: #d0650d;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, table {
+	margin: 0 0 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+h1 {font-size: 45px;}
+h2 {font-size: 36px;}
+h3 {font-size: 24px;}
+h4 {font-size: 18px;}
+h5 {font-size: 14px;}
+h6 {font-size: 12px;}
+strong {font-weight: bold;}
+em {font-style: italic;}
+
+/*
+    Main Layout Style
+    ========================================================================== */
+
+.inner, #Content {
+	position: relative;
+	width: 980px;
+	margin: 0 auto;
+	text-align: left;
+}
+#Header {
+	border-top: 30px solid #000;
+	border-color: rgba(0,0,0,0.5);
+}
+#Header .inner {
+	height: 120px;
+}
+#Content {
+	margin-bottom: 46px;
+	padding-bottom: 5px;
+	background: #fff url(../images/content_bg_grunge.jpg) no-repeat center top;
+	font-family: 'PT Sans', sans-serif;
+	-webkit-box-shadow: 0px 0px 15px 3px #000000;
+	   -moz-box-shadow: 0px 0px 15px 3px #000000;
+	     -o-box-shadow: 0px 0px 15px 3px #000000;
+	    -ms-box-shadow: 0px 0px 15px 3px #000000;
+	        box-shadow: 0px 0px 15px 3px #000000;
+}
+#Footer {
+	background: url(../images/footer_bg.png) no-repeat center top;
+	color: #fff;
+}
+#Footer .inner {
+	height: 144px;
+	padding: 42px 0 0;
+}
+
+/* Sprite */
+#Header	h1 a,
+#Content form ul li span.num,
+#Content form input[type="submit"],
+#Footer h2 {
+	background: url(../images/sprite.png) no-repeat;
+}
+
+/*
+    Header
+    ========================================================================== */
+
+ /* Logo */
+.logo {
+	margin: 0;
+}
+.logo a {
+	position: absolute;
+	top: -20px;
+	left: -47px;
+	display: block;
+	width: 271px;
+	height: 134px;
+	text-indent: -9999px;
+}
+
+/* Webshop */
+.webshop {
+	margin: 0;
+}
+.webshop a {
+	position: absolute;
+	top: -24px;
+	left: 220px;
+	color: #fff;
+	text-decoration: underline;
+}
+.webshop a:hover {text-decoration: none;}
+
+/*
+    Content
+    ========================================================================== */
+
+#Content header {
+	padding: 45px 95px 40px 125px;
+}
+#Content header h1 {
+	margin: 0 0 30px 15px
+}
+#Content header p {
+	color: #201f1f;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+#Content form {
+	margin: 0 5px;
+	padding: 16px 0 5px;
+	background: #313a46;
+	color: #989da3;
+	text-align: center;
+}
+#Content form h2 {
+	color: #fff;
+}
+#Content form ul {
+	text-align: left;
+	list-style-type: none;
+}
+#Content form li {
+	height: 55px;
+	margin: 0 -5px 35px;
+	padding: 0 0 0 166px;
+	background: #fff;
+	-webkit-box-shadow:0px 0px 15px 3px #000000;
+	   -moz-box-shadow:0px 0px 15px 3px #000000;
+	     -o-box-shadow:0px 0px 15px 3px #000000;
+	    -ms-box-shadow:0px 0px 15px 3px #000000;
+	        box-shadow:0px 0px 15px 3px #000000;
+}
+#Content form ul li span.num {
+	float: left;
+	width: 45px;
+	height: 45px;
+	margin: 5px 30px 0 0;
+	background-position: 0 -140px;
+	color: #fff;
+	font: bold 18px/42px 'PT Sans', sans-serif;
+	text-align: center;
+}
+#Content form li > div {
+	float: left;
+	margin: 8px 95px 0 0;
+	padding: 0 12px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow:0px 1px 3px 0 #404040;
+	   -moz-box-shadow:0px 1px 3px 0 #404040;
+	     -o-box-shadow:0px 1px 3px 0 #404040;
+	    -ms-box-shadow:0px 1px 3px 0 #404040;
+	        box-shadow:0px 1px 3px 0 #404040;
+	background: #6b7685;
+	background: -moz-linear-gradient(top, #6b7685 0%, #3f4a59 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6b7685), color-stop(100%,#3f4a59));
+	background: -webkit-linear-gradient(top, #6b7685 0%,#3f4a59 100%);
+	background: -o-linear-gradient(top, #6b7685 0%,#3f4a59 100%);
+	background: -ms-linear-gradient(top, #6b7685 0%,#3f4a59 100%);
+	background: linear-gradient(to bottom, #6b7685 0%,#3f4a59 100%);
+}
+#Content form li > div label {
+	float: left;
+	width: 162px;
+	color: #fff;
+	font: bold 18px/40px 'PT Sans', sans-serif;
+	cursor: pointer;
+}
+#Content form li:first-child > div {
+	margin-right: 52px;
+}
+#Content form li:first-child > div label {
+	width: 210px;
+}
+#Content form input {
+	display: block;
+	margin: 0 auto;
+	font-family: 'PT Sans', sans-serif;
+}
+#Content form input[type="text"] {
+	width: 355px;
+	margin-bottom: 28px;
+	padding: 10px 10px;
+	border: none;
+	font-size: 24px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	background: #fff;
+	background: -moz-linear-gradient(top, #e2e2e2 0%, #fff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(100%,#fff));
+	background: -webkit-linear-gradient(top, #e2e2e2 0%,#fff 100%);
+	background: -o-linear-gradient(top, #e2e2e2 0%,#fff 100%);
+	background: -ms-linear-gradient(top, #e2e2e2 0%,#fff 100%);
+	background: linear-gradient(to bottom, #e2e2e2 0%,#fff 100%);
+}
+#Content form input[type="submit"] {
+	width: 378px;
+	height: 49px;
+	line-height: 49px;
+	margin-bottom: 20px;
+	border: none;
+	background-position: 0 -190px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	cursor: pointer;
+}
+#Content form > p {
+	font-size: 14px;
+}
+
+#Content > img {
+	vertical-align: middle;
+}
+
+/*
+    Footer
+    ========================================================================== */
+
+#Footer h2 {
+	position: relative;
+	width: 197px;
+	height: 13px;
+	margin: 0 0 17px;
+	background-position: 97px -270px;
+	text-indent: -9999px;
+}
+#Footer h2 span {
+	position: absolute;
+	bottom: -11px;
+	left: 68px;
+	display: block;
+	width: 499px;
+	height: 1px;
+	background: url(../images/border_line_footer.png) no-repeat;
+}
+#Footer p {
+	width: 197px;
+	text-align: right;
+	font-size: 13px;
+	line-height: 18px;
+}
+#Footer img {
+	position: absolute;
+	top: 99px;
+	left: 234px;
+}
+
+/*
+    Mescellaneous
+    ========================================================================== */
+
+/* CSS File for ezMark jQuery Plugin */
+.ez-hide {
+	-moz-opacity: 0;
+	-webkit-opacity: 0;
+	opacity: 0;
+	filter:alpha(opacity=0); cursor: pointer;
+}
+.ez-radio {
+	float: right;
+	width: 14px;
+	height: 14px;
+	margin: 12px 0 0;
+	background: url(../images/bullet_white_circle.png) no-repeat; cursor: pointer;
+}
+.ez-selected {
+	background-position: left bottom;
+}
+.ez-radio {
+	zoom: 1;
+	*display:inline;
+	_height:14px;
+}
+

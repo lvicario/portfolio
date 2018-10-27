@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<!-- DROPDOWN MENU -->
+<script type="text/javascript">
+$(function(){
+    $(".main-nav ul li").hover(function(){
+        $(this).addClass("hover");
+        $('ul:first',this).css('visibility', 'visible');
+    }, function(){
+        $(this).removeClass("hover");
+        $('ul:first',this).css('visibility', 'hidden');
+    });
+    $(".main-nav ul li ul li:has(ul)").find("a:first").append(" &raquo; ");
+});
+</script>
+<!-- SLIDER -->
+<script type="text/javascript" src="js/jquery.bxSlider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.home-slider ul').bxSlider({
+			auto: true,
+			pager: true,
+			controls: false,
+			pause: 4000
+		});
+		$('.photo-slider').bxSlider({
+			auto: true,
+			displaySlideQty: 4,
+    		moveSlideQty: 1,
+			pause: 4000
+		});
+	});
+</script>
+</head>
+
+<body class="home">
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="#">Socosani</a></h1>
+    </div>
+    <div class="main-nav">
+        <ul>
+        	<li><a href="#">Compania</a></li>
+        	<li><a href="#">Nuestras Marcas</a>
+        		<ul class="sub_menu">
+        			 <li><a href="#">Socosani Agua Mineral Natural</a></li>
+                     <li><a href="#">Socosani Limon</a></li>
+                     <li><a href="#">Socosani Piña</a></li>
+                     <li><a href="#">Energina</a></li>
+                     <li><a href="#">Black</a></li>
+                     <li><a href="#">Premio</a></li>
+        		</ul>
+        	</li>
+            <li><a href="#">Agua Mineral</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Distribuidores</a></li>
+            <li><a href="#">Contacto</a></li>
+		</ul>
+    </div>
+    <div id="main">
+    	<div class="inner">
+            <div class="content">
+            	<div class="home-slider">
+                    <ul>
+                        <li><img src="images/img_slider.jpg" width="743" height="293" alt=""></li>
+                        <li><img src="images/img_slider.jpg" width="743" height="293" alt=""></li>
+                        <li><img src="images/img_slider.jpg" width="743" height="293" alt=""></li>
+                        <li><img src="images/img_slider.jpg" width="743" height="293" alt=""></li>
+                    </ul>
+                </div>
+            </div><!-- END .content -->
+            <div class="sidebar">
+                <h2>Toma Salud, toma Socosani</h2>
+                <ul>
+                    <li><a href="#"><img src="images/img_square_1.jpg" width="130" height="130" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_square_2.jpg" width="130" height="130" alt=""></a></li>
+                    <li><a href="#"><img src="images/img_square_3.jpg" width="130" height="130" alt=""></a></li>
+                </ul>
+            </div><!-- END .sidebar -->
+		</div><!-- END .inner -->
+    </div><!-- END #main -->
+</div><!-- END #wrapper -->
+
+<div class="products">
+	<div class="inner">
+    	<div class="col-one">
+        	<h3>Acerca de Socosani</h3>
+            <p><img src="images/img_acerca_de_socosani.jpg" width="138" height="138" alt=""> A 36km al noroeste de la ciudad de Arequipa, rodeado de volcanes, montañas y en medio de un desierto de tierra colorada, se encuentra el valle de Socosani, escondite de fuentes inagotables de agua, que se vierten en el río, recorriendo y refrescando todos los lugares que recorre. <a href="#">Leer Mas</a></p>
+        </div>
+        <div class="col-two">
+        	<h3>Noticias</h3>
+            <ul class="foot-list">
+                <li><a href="#">Premio de Socosani lleva alegría a los niños de Islay y Majes. &ndash;</a> <span>December 2, 2009</span></li>
+                <li><a href="#">Socosani dio la bienvenida a participantes de Perumin 2009 &ndash;</a> <span>December 2, 2009</span></li>
+                <li><a href="#">Socosani apuesta por el fútbol Amateur. &ndash;</a> <span>December 2, 2009</span></li>
+            </ul>
+        </div>
+        <div class="line">&nbsp;</div>
+    </div>
+</div><!-- END .products -->
+
+<div class="photo-slides">
+	<div class="inner">
+    	<div class="col-one">
+        	<h3>Nuestras Marcas</h3>
+            <ul class="foot-list">
+            	<li><a href="#">Socosani Agua Mineral Natural</a></li>
+                <li><a href="#">Socosani Limón</a></li>
+                <li><a href="#">Socosani Piña</a></li>
+                <li><a href="#">Energina</a></li>
+                <li><a href="#">Black</a></li>
+                <li><a href="#">Premio</a></li>
+                <li><a href="#">Soco Fruit</a></li>
+                <li><a href="#">Tropical Socosani</a></li>
+                <li><a href="#">San Agustin</a></li>
+            </ul>
+        </div>
+        <div class="col-two">
+            <h3>Galeria de Fotos</h3>
+            <ul class="photo-slider">
+                <li><a href="#"><img src="images/photo_slider_small_1.jpg" width="128" height="97" alt=""></a></li>
+                <li><a href="#"><img src="images/photo_slider_small_2.jpg" width="128" height="97" alt=""></a></li>
+                <li><a href="#"><img src="images/photo_slider_small_3.jpg" width="128" height="97" alt=""></a></li>
+                <li><a href="#"><img src="images/photo_slider_small_4.jpg" width="128" height="97" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div><!-- END .photo-slides -->
+
+<div id="footer">
+	<div class="inner">
+        <div class="foot-nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Compania</a></li>
+                <li><a href="#">Nuestras Marcas</a></li>
+                <li><a href="#">Agua Mineral</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Distribuidores</a></li>
+                <li><a href="#">Empleo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2012 Socosani Derechos Reservados</p>
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+            <a class="addthis_button_preferred_1"><img src="images/connect_fb.png" width="41" height="41" alt=""></a>
+            <a class="addthis_button_preferred_2"><img src="images/connect_tw.png" width="41" height="40" alt=""></a>
+            <a class="addthis_button_preferred_3"><img src="images/connect_gplus.png" width="44" height="44" alt=""></a>
+        </div>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f2fb66547715e9a"></script>
+        <!-- AddThis Button END -->
+	</div>
+</div><!-- END #footer -->
+
+
+</body>
+</html>

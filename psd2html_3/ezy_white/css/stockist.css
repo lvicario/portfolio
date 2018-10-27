@@ -1,0 +1,17 @@
+/* stockists */
+.stockists						{margin: 15px 0; font-family: Arial, Helvetica, sans-serif; color: #000;}
+.stockist						{margin: 0 0 10px;}
+.stockists h3					{margin-bottom: 10px; font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: #000;}
+.stockists h3 a					{display: block; height: 20px; padding-left: 10px; line-height: 20px; color: #fff; background: #cfd4d8 url(../images/stockist_bullet_plus.png) no-repeat 99% 50%; border-radius: 2px;}
+.stockists h3 a:hover			{color: #fff; background: #70cde3 url(../images/stockist_bullet_plus_hover.png) no-repeat 99% 50%; text-decoration: none;}
+.stockists h3 a.current,
+.stockists h3 a.current:hover	{color: #fff; background: #70cde3 url(../images/stockist_bullet_plus_hover.png) no-repeat 99% 50%;}
+.answer							{padding: 1px 2px;}
+
+/* Content */
+.stockist h4					{margin: 0; font-size: 12px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;}
+.stockist ul					{margin: 5px 0 0 -16px; list-style-type: none; overflow: hidden;}
+.stockist ul li					{display: inline;}
+.stockist ul li a				{float: left; display: inline; margin: 0 0 15px 16px;}
+.stockist ul li a img			{}
+.stockist p						{color}

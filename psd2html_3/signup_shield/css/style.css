@@ -1,0 +1,84 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'bankgothic_medium';
+    src: url('font/bankgothic_md_bt_medium-webfont.eot');
+    src: url('font/bankgothic_md_bt_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/bankgothic_md_bt_medium-webfont.woff') format('woff'),
+         url('font/bankgothic_md_bt_medium-webfont.ttf') format('truetype'),
+         url('font/bankgothic_md_bt_medium-webfont.svg#bankgothic_medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 12px 'bankgothic_medium'; line-height: normal; text-decoration: none; text-transform: uppercase; text-align: center; color: #fff; background: #000; margin: 0; padding: 0 0 50px;}
+a							{text-decoration: none; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 1em;}
+h1, h2, h3, h4, h5, h6		{font-weight: normal;}
+h1							{font-size: 30px;}
+h2							{font-size: 24px;}
+h3							{font-size: 18px;}
+h4							{font-size: 14px;}
+h5							{font-size: 12px;}
+h6							{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+/*hr							{clear: both; height: 1px; margin: 0 0 1em; color: #d3d3d3; background-color: #d3d3d3;  border: 0 none;}*/
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* ================== */
+#header							{width: 960px; height: 120px; margin: 0 auto; text-align: left; position: relative;}
+#header	h1						{margin: 0;}
+#header	h1 a					{display: block; width: 239px; height: 84px; background: url(../images/logo.png) no-repeat; text-indent: -9999px; position: absolute; top: 19px; left: -8px;}
+#header	p						{width: 500px; height: 8px; border-top: 1px solid #666; border-bottom: 1px solid #666; font-size: 13px; text-transform: uppercase; position: absolute; top: 69px; left: 93px;}
+#header	p span					{position: absolute; bottom: -19px; right: 5px;}
+
+#content						{width: 960px; margin: -93px auto 39px; text-align: left;}
+#content:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+.video								{float: left; width: 620px; height: 409px; margin: 93px 0 0 -27px; background: url(../images/line_bg_video.png) no-repeat; position: relative;}
+.video .video-box					{margin: 25px 0 0 28px;}
+.video .video-box h2				{width: 168px; height: 12px; margin: 0; background: url(../images/incoming_transmission.png) no-repeat; text-indent: -9999px;}
+.video .video-box .video-container	{width: 579px; height: 324px; border: 3px solid #fff; border-top-width: 4px; border-bottom-width: 2px;}
+.video > img						{position: absolute; top: 27px; left: -536px;}
+
+.form							{float: right; width: 376px; height: 502px; margin: 0 -9px 0 0; background: url(../images/line_bg_form.png) no-repeat; position: relative;}
+.form form						{padding: 30px 50px 0 15px}
+.form form h2					{margin-bottom: 20px; font-size: 25px;}
+.form form label				{display: block; margin: 0 0 12px; font-size: 17px;}
+.form form label input			{display: block; width: 295px; padding: 7px; border: none; font-family: 'bankgothic_medium'; font-size: 14px; color: #333; text-transform: uppercase;}
+.form form p					{margin: -5px 0  25px; font: 13px Arial, Helvetica, sans-serif; text-transform: none;}
+.form form input[type="submit"]	{padding: 2px 38px; background: #d51a21; border: none; font: 22px 'bankgothic_medium'; text-transform: uppercase; color: #fff; cursor: pointer;}
+.form .model					{position: absolute; top: 94px; right: -163px;}
+.form .model img				{margin-left: 7px;}
+.form .model h3					{width: 174px; height: 33px; line-height: 32px; padding: 0 20px; background: url(../images/model_name_bg.png) no-repeat; font-size: 20px;}
+
+#footer							{
+									background-image:  url(../images/line_bg_footer_right.png), url(../images/line_bg_footer_left.png);
+									background-position: 170% 0%, left top;
+									background-repeat: no-repeat, repeat-x;
+								}
+#footer .inner					{width: 960px; height: 97px; padding: 1px 0; margin: 0 auto 0; background: url(../images/line_bg_footer.png) no-repeat;}
+#footer h2						{margin: 2px 0 17px; font-size: 20px;}
+#footer p						{font-size: 25px;}
+#footer p span					{}
+#footer p span strong			{font-weight: normal; font-size: 35px;}
+
+

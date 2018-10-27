@@ -1,0 +1,170 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 9pt Arial, Helvetica, sans-serif; line-height: normal; text-decoration: none; text-align: center; color: #2d2d2d; background: #026cb0 url(../images/bg_grad.png) repeat-x left top; margin: 0; padding: 0;}
+a							{text-decoration: none; outline: none; color: #026baf;}
+a:hover						{text-decoration: none;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 16px 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 19pt; font-weight: bold; color: #757575;}
+h3							{font-size: 16pt; font-weight: bold; color: #757575;}
+h4, h5, h6					{font-size: 13pt; font-weight: bold;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+/*hr							{clear: both; height: 1px; margin: 0 0 1em; color: #d3d3d3; background-color: #d3d3d3;  border: 0 none;}*/
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* MAIN LAYOUT STYLES ===================================== */
+#wrapper 						{width: 966px; margin: 0 auto; text-align: left;}
+#main							{padding-top: 13px; background: url(../images/bg_content.png) repeat-x left top; overflow: hidden;}
+#main .inner					{padding: 13px 16px 50px 16px; margin: 0 13px 0 13px; background: #fff url(../images/wave_inner.png) no-repeat left bottom; overflow: hidden;}
+#main .inner h2					{margin: 0 0 15px; position: relative;}
+#main .inner h2 em				{display: inline-block; margin-left: 30px; padding: 0 10px; background: #fff; font-style: normal; position: relative; z-index: 2;}
+#main .inner h2 span			{display: block; width: 100%; height: 16px; background: #154b8d; position: absolute; top: 8px; left: 0; z-index: 1;}
+.content						{float: left; display: inline; width: 610px;}
+.sidebar						{float: right; display: inline; width: 269px;}
+
+/* HEADER ===================================== */
+#header							{height: 163px; padding: 1px 0; background: url(../images/header_img.jpg) no-repeat;}
+#header	h1						{margin: 0;}
+#header	h1 a					{float: left; display: inline; margin: 63px 0 0 40px; width: 165px; height: 31px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+
+/* MAIN NAV */
+/* level one */
+.main-nav ul                    {height: 38px; margin: 0; padding-left: 78px; background: #434343; border-bottom: 3px solid #e4b102; list-style-type: none; position: relative; z-index: 9999;}
+.main-nav ul li                 {float: left; zoom: 1;}
+.main-nav ul a:hover		    {}
+.main-nav ul a:active           {}
+.main-nav ul li a               {display: block; padding: 11px 25px; border-right: 1px solid #c5c5c5; color: #fff; text-transform: uppercase;}
+.main-nav ul li:last-child a    {border-right: none;} /* Doesn't work in IE */
+.main-nav ul li.hover,
+.main-nav ul li:hover           {background: #303030; position: relative;}
+.main-nav ul li.hover a         {}
+/* level two */
+.main-nav ul ul 				{width: 223px; padding-top: 4px; padding-left: 0; background: none; visibility: hidden; position: absolute; top: 100%; left: 0;}
+.main-nav ul ul li 				{float: none; background: #303030; border-bottom: 1px solid #8d8d8d;}
+.main-nav ul ul li.hover,
+.main-nav ul ul li:hover		{background: #04315e;}
+.main-nav ul ul li a			{text-transform: none;}
+/* IE 6 & 7 Needs Inline Block */
+.main-nav ul ul li a			{border-right: none; width: 100%; display: inline-block;}
+/* level three */
+.main-nav ul ul ul 				{left: 100%; top: 0;}
+.main-nav ul li:hover > ul 		{visibility: visible;}
+
+/* CONTENT STYLES =====================================  */
+.post-thumb						{width: 600px; height: 215px; padding: 4px; background: #fff; border: 1px solid #bdbcbc; -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.20); -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.20); box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.20);}
+.content ul						{list-style-type: none;}
+.content ul li					{padding: 0 0 0 13px; background: url(../images/arrow_sidebar.png) no-repeat left center; line-height: 14pt;}
+
+/* SIDEBAR STYLES =====================================  */
+.section						{margin: 0 0 17px; padding: 1px 18px; background: #ddeeff; border-top: 5px solid #154b8d; color: #2d2d2d;}
+.section a						{color: #154b8d;}
+.section h4						{margin: 8px 0 10px;}
+.section ul						{margin: 14px 0; list-style-type: none;}
+.section ul li					{}
+
+.section-links ul li a			{display: block; margin: 0 -18px; padding: 5px 33px; background: url(../images/arrow_sidebar.png) no-repeat 18px 9px; text-transform: uppercase;}
+.section-links ul li a:hover,
+.section-links ul li.current a	{background-color: #fff;}
+
+.section-notice					{border-color: #434343;}
+.section-notice ul li			{margin: 0 0 15px; padding: 0 0 0 13px; background: url(../images/arrow_sidebar.png) no-repeat 0px 4px;}
+.section-notice ul li a			{display: block; font-weight: bold;}
+.section-notice ul li a:hover	{text-decoration: underline;}
+.section-notice ul li span		{font-size: 8pt;}
+
+/* Homepage =========================================== */
+.home #main						{}
+.home #main .inner				{padding: 0; margin: 0 0 0 0; background: url(../images/wave.png) no-repeat left bottom;}
+.home .content					{width: 743px; margin: 0 0 0 13px;}
+.home .sidebar					{width: 184px;margin: 0 13px 0 0; overflow: hidden;}
+.home .sidebar h2				{float: left; width: 28px; height: 328px; background: url(../images/txt_toma_salud.png) no-repeat; text-indent: -9999px;}
+.home .sidebar ul				{float: right; margin: 0; list-style-type: none;}
+.home .sidebar ul li			{margin: 0 0 33px;}
+.home .sidebar ul li img		{width: 130px; height: 130px; padding: 8px 9px; background: #fff;}
+/* Slider */
+.home-slider ul							{width: 743px; margin: 0;}
+.home-slider ul li						{padding: 0; background: none;}
+.home-slider ul li img					{}
+.home-slider .bx-pager					{margin: -11px 0 0; text-align: right;}
+.home-slider .bx-pager a				{display: inline-block; width: 49px; height: 3px; margin: 0 0 0 3px; background: #e4b102;  text-indent: -9999px; font-size: 0; line-height: 0;}
+.home-slider .bx-pager a:hover,
+.home-slider .bx-pager a.pager-active	{background: #fff;}
+
+/* BOTTOM STYLES =========================================== */
+.photo-slides					{padding: 1px 0 20px; background: #04315e; border-top: 3px solid #e4b102;}
+.photo-slides .inner			{width: 940px; margin: 0 auto; text-align: left;}
+.photo-slides h3				{margin: 15px 0; color: #fff;}
+.photo-slides .bx-wrapper		{margin: 0 0 0 40px}
+.photo-slides .bx-window		{}
+.photo-slides .bx-prev,
+.photo-slides .bx-next			{display: block; width: 31px; height: 31px; background: url(../images/slider_btn.png) no-repeat; text-indent: -9999px; position: absolute; top: 56px;}
+.photo-slides .bx-prev			{left: -50px;}
+.photo-slides .bx-next			{right: -15px; background-position: left bottom;}
+
+.photo-slider					{margin: 0; list-style-type: none;}
+.photo-slider li				{float: left; display: inline;}
+.photo-slider li img			{width: 184px; height: 135px; margin: 0 33px 0 0; padding: 4px; background: #fff;}
+
+.products						{padding: 1px 0 25px; background: #434343;}
+.products .inner				{width: 966px; margin: 0 auto; text-align: left; overflow: hidden;}
+.products h3					{margin: 10px 0 18px; padding: 0 0 5px 10px; border-bottom: 1px solid #c5c5c5; color: #fff;}
+.products .col-one				{float: left; width: 535px; overflow: hidden;}
+.products .col-one p			{color: #fff; font-size: 10pt; line-height: 13pt;}
+.products .col-one p img		{float: left; display: inline; width: 138px; height: 138px; margin: 0 15px 0 10px; border: 4px solid #fff;}
+.products .col-one p a			{color: #e4b102;}
+.products .col-two				{float: right; width: 378px;}
+ul.foot-list					{margin: 0 0 0 15px; list-style-type: none;}
+ul.foot-list li					{padding-left: 16px; background: url(../images/arrow_white.png) no-repeat left center;}
+ul.foot-list li a				{color: #fff; font-size: 11pt;}
+ul.foot-list li a:hover			{color: #d6ac0e;}
+
+/* Home Bottom Style */
+.home .products							{min-height: 209px; height:auto !important; height: 209px; padding-bottom: 10px; background: #04315e; border-top: 3px solid #e4b102;}
+.home .products .inner					{position: relative;}
+.home .products .inner .line			{width: 1px; height: 185px; background: #59728b; position: absolute; top: 15px; right: 400px;}
+.home .products h3						{padding-bottom: 0; border-bottom: none;}
+.home .products ul.foot-list li			{margin-bottom: 15px; background-position: 0px 4px;}
+.home .products ul.foot-list li a		{font-weight: bold;}		
+.home .products ul.foot-list li span	{color: #d1cfcf; font-size: 9pt;}
+
+.home .photo-slides					{background: #434343; border-top: none;}
+.home .photo-slides .inner			{width: 966px; overflow: hidden;}
+.home .photo-slides .col-one		{float: left; display: inline; width: 269px;}
+.home .photo-slides .col-two		{float: right; display: inline; width: 657px;}
+.home .photo-slides h3				{margin: 10px 0 18px; padding: 0 0 5px 10px; border-bottom: 1px solid #c5c5c5;}
+.home .photo-slides .bx-wrapper		{margin: 35px 0 0 32px}
+.home .photo-slides .bx-window		{}
+.home .photo-slides .bx-prev,
+.home .photo-slides .bx-next		{width: 25px; height: 24px; background: url(../images/slider_btn_small.png) no-repeat; top: 40px;}
+.home .photo-slides .bx-prev		{left: -34px;}
+.home .photo-slides .bx-next		{right: -20px; background-position: left bottom;}
+
+.home .photo-slider li img			{width: 128px; height: 97px; margin: 0 13px 0 0;}
+
+
+
+/* FOOTER 1 ===================================== */
+#footer							{background: #04315e;}
+#footer .inner					{padding: 10px 0; width: 940px; margin: 0 auto; text-align: left; position: relative;}
+.foot-nav ul					{margin: 3px 0 0; list-style-type: none;}
+.foot-nav ul li					{display: inline;}
+.foot-nav ul li a				{height: 12px; line-height: 12px; padding: 0 11px; border-left: 1px solid #fff; color: #fff; text-transform: uppercase;}
+.foot-nav ul li:first-child a	{padding-left: 0; border: none;}
+.copyright						{color: #fff; font-size: 8pt; font-family: Verdana, Geneva, sans-serif;}
+.addthis_toolbox				{width: 138px; position: absolute; top: 23px; right: 0;}

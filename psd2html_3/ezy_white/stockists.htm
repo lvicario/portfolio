@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Stockist</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/stockist.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]><link href="css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 					   
+			if($('.stockists').length) {
+			$('.answer').hide();
+			// handlers
+			$('.stockists h3 a').click(function() {
+				// close all stockists
+				$('.answer').hide(500);
+				// remove current class
+				$('.stockists h3 a').removeClass('current');
+				// switch class, open this one.
+				$(this).addClass('current').parent().parent().find('.answer').show(500);
+				
+				return false;
+				});
+		}
+}); 
+</script>
+</head>
+
+<body class="home">
+
+<div id="wrapper">
+    <div class="menu-main-nav-container">
+		<ul id="menu-main-nav" class="menu">
+        	<li><a href="about.htm">About</a></li>
+            <li><a href="#">3 Ezy Steps</a></li>
+            <li><a href="#">Shop Online</a></li>
+            <li><a href="stockists.htm">Stockists</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+        </ul>
+	</div>
+	<p class="my-cart"><a href="cart.htm">Shopping Cart</a> (0) Items  | <a href="#">Checkout</a></p>
+    <div id="content">
+    	<ul class="sidebar">
+        	<li id="info" class="widget">
+            	<h1>Ezy White</h1>
+                <h2>Teeth Whitening Pack</h2>
+                <p>EzyWhite has been specifically designed to be safe, quick and easy to use at hom, without the need for expensive moulds or the guesswork of meausuring out chemical products.</p>
+            </li>
+            <li id="newsletter" class="widget">
+            	<h2>Sign up to our Newsletter</h2>
+                <p>By signing up, you can get access to our latest news and deals from Implaclean and Ezywhite..</p>
+                <input name="" type="text" value="Email Address" />
+                <input name="" type="text" value="Password" />
+                <a href="#">Download Product Brochure</a>
+            </li>
+        </ul>
+        <div class="main-content">
+        	<h3>Stockists</h3>
+            <p>Ri pubis estrivides contimus omnosum quam presendem inatis me arips, comperractam et qua L. Bemursu linatum in vit quam faciorum ventra vidit opublicum pubi concert iferissi prios con.</p>
+            <div class="stockists">
+                <div class="stockist">
+                    <h3><a class="" href="#">Australia</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+            
+                <div class="stockist">
+                    <h3><a href="#">America</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+            
+                <div class="stockist">
+                    <h3><a href="#">United Kingdom</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+                
+                <div class="stockist">
+                    <h3><a href="#">Germany</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+            
+                <div class="stockist">
+                    <h3><a href="#">Singapore</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+                
+                <div class="stockist">
+                    <h3><a href="#">Japan</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+            
+                <div class="stockist">
+                    <h3><a href="#">Holland</a></h3>
+                    <div style="display: none;" class="answer">
+                        <h4>National</h4>
+                        <ul>
+                        	<li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                            <li><a href="#"><img src="images/stockist_sample_logo.png" width="112" height="47" alt="" /></a></li>
+                        </ul>
+                        <h4>Victoria</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                        <h4>New South Wales</h4>
+                        <p>Pete's Country Pharmacy - 123 Clean Street, Rowville 3122<br /> Andy's Store - 111 Stoore Street, baytswater 3100</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</div><!-- END #wrapper -->
+
+<div id="footer">
+	<div class="inner">
+        <div class="menu-footer-nav-container">
+            <ul id="menu-footer-nav" class="menu">
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="contact.htm">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <p class="copyright">&copy; 2011 EzyWhite&trade; All Right Reserved.</p>
+	</div>
+</div>
+
+</body>
+</html>

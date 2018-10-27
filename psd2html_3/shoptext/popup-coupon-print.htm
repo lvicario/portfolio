@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShopText</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jqtransform.css" rel="stylesheet" type="text/css" />
+<link href="css/nyroModal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- JQTRANSFORM -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script language="javascript" type="text/javascript">
+	$(function(){
+		$('body').jqTransform({imgPath:'jqtransformplugin/img/'});
+	});
+</script>
+
+<!-- NYRO MODAL -->
+<script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script><![endif]-->
+<script type="text/javascript">
+	$(function() {
+	  $('.get-alerts a').nyroModal();
+	  $('.clipped a').nyroModal();
+	  $('.alert-error').nyroModal();
+	});
+</script>
+
+<!-- Dropdown Content -->
+<script type="text/javascript" src="js/dropdowncontent.js"></script>
+
+</head>
+
+<body>
+    <div class="coupon-options print-option">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options')">Close</a>
+        <div class="option1">
+            <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+        </div>
+    </div>
+</body>
+</html>

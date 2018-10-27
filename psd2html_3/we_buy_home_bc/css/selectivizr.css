@@ -1,0 +1,11 @@
+
+.main-nav						{clear: both; width: 900px; height: 47px; background-color: #59950a; position: absolute; top: 141px; left: 83px;}
+.main-nav						{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #66aa0b), color-stop(1.00, #4d8108)); background-image: -moz-linear-gradient(center top, #66aa0b 0%, #4d8108 100%);}
+.main-nav ul					{width: 900px; height: 47px; margin: 0; list-style-type: none;}
+.main-nav ul li					{float: left; display: inline; height: 31px; margin: 8px 0 0; border-left: 2px solid #a8cc7a;}
+.main-nav ul li:first-child		{border: none;}
+.main-nav ul li a				{float: left; display: inline; height: 47px; line-height: 48px; margin: -8px 0 -8px 0; padding: 0 20px; color: #fff; font-size: 18px; text-align: center}
+.main-nav ul li a				{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #66aa0b), color-stop(1.00, #4d8108)); background-image: -moz-linear-gradient(center top, #66aa0b 0%, #4d8108 100%);}
+.main-nav ul li a:hover			{height: 47px; background-color: #be0101; text-decoration: none;}
+.main-nav ul li a:hover			{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #dd0000), color-stop(1.00, #9d0202)); background-image: -moz-linear-gradient(center top, #dd0000 0%, #9d0202 100%);}
+.main-nav ul li:last-child a	{padding-right: 24px;}

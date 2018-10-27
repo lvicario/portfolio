@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShopText</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jqtransform.css" rel="stylesheet" type="text/css" />
+<link href="css/nyroModal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- JQTRANSFORM -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script language="javascript" type="text/javascript">
+	$(function(){
+		$('body').jqTransform({imgPath:'jqtransformplugin/img/'});
+	});
+</script>
+
+<!-- NYRO MODAL -->
+<script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script><![endif]-->
+<script type="text/javascript">
+	$(function() {
+	  $('.get-alerts a').nyroModal();
+	  $('.clipped a').nyroModal();
+	  $('.alert-error').nyroModal();
+	});
+</script>
+
+<!-- Dropdown Content -->
+<script type="text/javascript" src="js/dropdowncontent.js"></script>
+
+</head>
+
+<body>
+    <div class="coupon-options load-option">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options')">Close</a>
+        <div class="option1">
+            <h3><span>1</span>Load this coupon to your store loyality card</h3>
+            <p>
+                <span>Select a store:</span>
+                <select name="">
+                    <option>Select...</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                <br class="clear" />
+            </p>
+            <p>
+                <span>Enter card number:</span>
+                <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+                <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+                <small>We’ll remember your store card next time.</small>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ShopText</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/jqtransform.css" rel="stylesheet" type="text/css" />
+<link href="css/nyroModal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+
+<!-- JQTRANSFORM -->
+<script type="text/javascript" src="js/jquery.jqtransform.js"></script>
+<script language="javascript" type="text/javascript">
+	$(function(){
+		$('body').jqTransform({imgPath:'jqtransformplugin/img/'});
+	});
+</script>
+
+<!-- NYRO MODAL -->
+<script type="text/javascript" src="js/jquery.nyroModal.custom.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="js/jquery.nyroModal-ie6.min.js"></script><![endif]-->
+<script type="text/javascript">
+	$(function() {
+	  $('.get-alerts a').nyroModal();
+	  $('.clipped a').nyroModal();
+	  $('.alert-error').nyroModal();
+	});
+</script>
+
+<!-- Dropdown Content -->
+<script type="text/javascript" src="js/dropdowncontent.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<!-- <img src="images/star.png" width="1000" height="1154" alt="" class="star" /> -->
+        <h1><a href="#">ShopText</a></h1>
+        <p class="advantage">
+        	<small>The ShopText Advantage:</small>
+            <strong>Get printable and store  card coupons online or ANY mobile phone!</strong>
+            <span>Just start clipping coupons below...</span>
+        </p>
+        <div class="connect">
+            <div class="fb-like"><img src="images/facebook_like.png" width="79" height="22" alt="" /></div>
+            <a href="#" class="share">Share ShopText with a friend</a>
+        </div>
+        <ul class="nav">
+        	<li class="coupons"><a href="#">coupons</a></li>
+            <li class="how-works"><a href="#">how it works</a></li>
+            <li class="get-alerts"><a href="#alert-box">get coupon alerts!</a></li>
+        </ul>
+        <img src="images/cellphones.png" width="351" height="238" alt="" class="cellphones" />
+    </div><!-- END #header -->
+	<div id="page">
+    	<div class="top-info">
+        	<p class="info">There are <strong>34</strong> store card coupons and <strong>42</strong> printable coupons</p>
+            <p class="location">
+            	<span>Your location: <a href="#">change</a></span>
+                <strong>06877</strong>
+            </p>
+            <p class="store-card-coupons">
+				<span>Store Card Coupons:</span>
+                <a href="#" id="loyality-card1" rel="opt-loyality-card1"><img src="images/card_coupon_logo_1.png" width="42" height="26" alt="" /></a>
+                <a href="#" id="loyality-card2" rel="opt-loyality-card2"><img src="images/card_coupon_logo_2.png" width="44" height="26" alt="" /></a>
+                <a href="#" id="loyality-card3" rel="opt-loyality-card3"><img src="images/card_coupon_logo_3.png" width="86" height="26" alt="" /></a>
+                <a href="#" id="loyality-card4" rel="opt-loyality-card4"><img src="images/card_coupon_logo_4.png" width="27" height="26" alt="" /></a>
+                <a href="#" id="loyality-card5" rel="opt-loyality-card5"><img src="images/card_coupon_logo_5.png" width="36" height="26" alt="" /></a>
+            </p>
+            <div class="clear"></div>
+        </div>
+        
+        <div class="toolbar">
+        	<div class="view-mode">
+            	<span class="txt">view</span>
+                <select name="">
+                    <option>All coupons</option>
+                    <option>Coupons Option 1</option>
+                    <option>Coupons Option 2</option>
+                    <option>Coupons Option 3</option>
+                </select>
+                <select name="">
+                    <option>All categories</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+            </div>
+            <div class="clipped">You’ve clipped <strong>5</strong> coupons valued at <strong>$17.95</strong> <a href="#alert-box">Get alerts</a></div>
+            <br class="clear" />
+        </div>
+        
+        <ul class="product-list" id="product-list">
+        	<li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link1" rel="opt-more-info1">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options1" rel="opt-coupon-options1"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link2" rel="opt-more-info2">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options2" rel="opt-coupon-options2"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li class="clipd">
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link3" rel="opt-more-info3">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options3" rel="opt-coupon-options3"><img src="images/icon_clipd.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link4" rel="opt-more-info4">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options4" rel="opt-coupon-options4"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link5" rel="opt-more-info5">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options5" rel="opt-coupon-options5"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li class="clipd">
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link6" rel="opt-more-info6">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options6" rel="opt-coupon-options6"><img src="images/icon_clipd.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link7" rel="opt-more-info7">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options7" rel="opt-coupon-options7"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+            <li>
+            	<div>
+                	<p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                    <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                    <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> <a href="#" id="more-link8" rel="opt-more-info8">More</a></p>
+                    <a href="#" class="share">share</a>
+                    <a href="#" class="clip" id="coupon-options8" rel="opt-coupon-options8"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                    <p class="badge">$1</p>
+                </div>
+            </li>
+        </ul>
+        
+    </div><!-- END #page -->
+</div><!-- END #wrapper -->
+
+<div id="alert-box" style="display: none; width: 600px; z-index:2000;">
+    <div class="alert-box">
+        <h3>Never miss a penny. Get coupons alerts sent to your email or ANY mobile phone.</h3>
+        <ul>
+            <li class="email"><span>Email address</span> <input type="text" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" /></li>
+            <li class="phone"><span>Mobile phone</span> <div class="area"><input type="text" value="Area" onfocus="if (this.value == 'Area') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Area';}" /></div><div class="number"><input type="text" value="Phone" onfocus="if (this.value == 'Phone') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Phone';}" /></div></li>
+            <li class="actions"><span>&nbsp;</span><button type="button" title="Submit" class="button"><span><span>Submit</span></span></button><button type="button" title="Cancel" class="button cancel"><span><span>Cancel</span></span></button></li>
+        </ul>
+        <a href="#alert-box-error" class="alert-error">Go to error page</a>
+    </div>
+</div>
+<div id="alert-box-error" style="display: none; width: 600px; z-index:2000;">
+    <div class="alert-box error">
+        <h3>Never miss a penny. Get coupons alerts sent to your email or ANY mobile phone.</h3>
+        <p class="error-message">Please correct the errors indicated below.</p>
+        <ul>
+            <li class="email"><span>Email address</span> <input type="text" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" /> <img src="images/exclamation.png" width="44" height="33" alt="" class="exclamation" /></li>
+            <li class="phone"><span>Mobile phone</span> <div class="area"><input type="text" value="Area" onfocus="if (this.value == 'Area') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Area';}" /></div><div class="number"><input type="text" value="Phone" onfocus="if (this.value == 'Phone') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Phone';}" /></div><img src="images/exclamation.png" width="44" height="33" alt="" class="exclamation" /></li>
+            <li class="actions"><span>&nbsp;</span><button type="button" title="Submit" class="button"><span><span>Submit</span></span></button><button type="button" title="Cancel" class="button cancel"><span><span>Cancel</span></span></button></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Start Drop down Content -->
+<div id="opt-more-info1" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info1')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info2" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info2')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info3" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info3')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info4" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info4')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info5" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info5')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info6" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info6')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info7" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info7')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+<div id="opt-more-info8" class="more-info dropdownBox">
+    <ul class="product-list">
+        <li>
+            <div>
+            	<a class="close" href="javascript:dropdowncontent.hidediv('opt-more-info8')">Close</a>
+                <p class="thumb"><img src="images/product_image.jpg" width="100" height="42" alt="" /></p>
+                <h3>Save $1.00 on Newsman's <span class="reg">Own<span>&reg;</span></span></h3>
+                <p class="details">SAVE $0.50 on any ONE (1) Newman's <span class="reg">Own<span>&reg;</span></span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum eu ligula. Aliquam dignissim felis. Ut at quam in quam suscipit tincidunt. Proin feugiat diam vel nibh. Praesent massa. Maecenas faucibus ornare libero. Nullam in nisi. Vivamus leo tortor, bibendum sit amet, euismod at, porta ut, nunc. Phasellus convallis arcu. Morbi lacinia sollicitudin est.</p>
+                <a href="#" class="share">share</a>
+                <a href="#" class="clip"><img src="images/icon_clip.png" width="90" height="51" alt="" /></a>
+                <p class="badge">$1</p>
+            </div>
+        </li>
+	</ul>
+</div>
+
+<div id="opt-coupon-options1" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options1')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options2" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options2')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options3" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options3')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options4" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options4')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options5" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options5')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options6" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options6')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options7" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options7')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+<div id="opt-coupon-options8" class="coupon-options dropdownBox">
+    <a class="close" href="javascript:dropdowncontent.hidediv('opt-coupon-options8')">Close</a>
+    <div class="option1">
+        <p class="intro">You have 2 options:</p>
+        <h3><span>1</span>Load this coupon to your store loyality card</h3>
+        <p>
+            <span>Select a store:</span>
+            <select name="">
+                <option>Select...</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+            </select>
+            <br class="clear" />
+        </p>
+        <p>
+            <span>Enter card number:</span>
+            <input type="text" value="Enter text..." onfocus="if (this.value == 'Enter text...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter text...';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+            <small>We’ll remember your store card next time.</small>
+        </p>
+    </div>
+    <div class="option2">
+        <p class="intro">Or...</p>
+        <h3><span>2</span></h3>
+        <button type="button" title="Submit" class="button"><span><span>Print my coupon</span></span></button>
+    </div>
+</div>
+
+<div id="opt-loyality-card1" class="loyality-card dropdownBox">
+	<div class="inner">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-loyality-card1')">Close</a>
+        <span class="pointing-arrow">Point</span>
+        <p>
+            <span>Enter your loyality card # below:</span>
+            <input type="text" value="Loyalty card #" onfocus="if (this.value == 'Loyalty card #') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Loyalty card #';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </p>
+	</div>
+</div>
+<div id="opt-loyality-card2" class="loyality-card dropdownBox">
+	<div class="inner">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-loyality-card2')">Close</a>
+        <span class="pointing-arrow">Point</span>
+        <p>
+            <span>Enter your loyality card # below:</span>
+            <input type="text" value="Loyalty card #" onfocus="if (this.value == 'Loyalty card #') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Loyalty card #';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </p>
+	</div>
+</div>
+<div id="opt-loyality-card3" class="loyality-card dropdownBox">
+	<div class="inner">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-loyality-card3')">Close</a>
+        <span class="pointing-arrow">Point</span>
+        <p>
+            <span>Enter your loyality card # below:</span>
+            <input type="text" value="Loyalty card #" onfocus="if (this.value == 'Loyalty card #') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Loyalty card #';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </p>
+	</div>
+</div>
+<div id="opt-loyality-card4" class="loyality-card dropdownBox">
+	<div class="inner">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-loyality-card4')">Close</a>
+        <span class="pointing-arrow">Point</span>
+        <p>
+            <span>Enter your loyality card # below:</span>
+            <input type="text" value="Loyalty card #" onfocus="if (this.value == 'Loyalty card #') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Loyalty card #';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </p>
+	</div>
+</div>
+<div id="opt-loyality-card5" class="loyality-card dropdownBox">
+	<div class="inner">
+        <a class="close" href="javascript:dropdowncontent.hidediv('opt-loyality-card5')">Close</a>
+        <span class="pointing-arrow">Point</span>
+        <p>
+            <span>Enter your loyality card # below:</span>
+            <input type="text" value="Loyalty card #" onfocus="if (this.value == 'Loyalty card #') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Loyalty card #';}" />
+            <button type="button" title="Submit" class="button"><span><span>Submit</span></span></button>
+        </p>
+	</div>
+</div>
+
+<!-- End Drop down Content -->
+
+<script type="text/javascript">
+//Call dropdowncontent.init("anchorID", "positionString", glideduration, "revealBehavior") at the end of the page:
+
+dropdowncontent.init("more-link1", "right-bottom", 300, "click")
+dropdowncontent.init("more-link2", "right-bottom", 300, "click")
+dropdowncontent.init("more-link3", "right-bottom", 300, "click")
+dropdowncontent.init("more-link4", "right-bottom", 300, "click")
+dropdowncontent.init("more-link5", "right-bottom", 300, "click")
+dropdowncontent.init("more-link6", "right-bottom", 300, "click")
+dropdowncontent.init("more-link7", "right-bottom", 300, "click")
+dropdowncontent.init("more-link8", "right-bottom", 300, "click")
+
+dropdowncontent.init("coupon-options1", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options2", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options3", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options4", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options5", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options6", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options7", "right-bottom", 300, "click")
+dropdowncontent.init("coupon-options8", "right-bottom", 300, "click")
+
+dropdowncontent.init("loyality-card1", "right-bottom", 300, "click")
+dropdowncontent.init("loyality-card2", "right-bottom", 300, "click")
+dropdowncontent.init("loyality-card3", "right-bottom", 300, "click")
+dropdowncontent.init("loyality-card4", "right-bottom", 300, "click")
+dropdowncontent.init("loyality-card5", "right-bottom", 300, "click")
+
+</script>
+
+</body>
+</html>

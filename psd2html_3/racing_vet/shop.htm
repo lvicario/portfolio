@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shop</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/toggler.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "1000px",
+		height: "258px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function(){ 					   
+			if($('.toggler').length) {
+			$('.answer').hide();
+			// handlers
+			$('.toggler h3 a').click(function() {
+				// close all stockists
+				$('.answer').hide(500);
+				// remove current class
+				$('.toggler h3 a').removeClass('current');
+				// switch class, open this one.
+				$(this).addClass('current').parent().parent().find('.answer').show(500);
+				
+				return false;
+				});
+		}
+}); 
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="index.htm">Racing Vet</a></h1>
+        <ul>
+        	<li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </div><!-- END #header -->
+    <div class="branding branding-shop">
+        <div id="slides">
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Let's hit<br /> the shops</h3>
+                    <p>Check out the list below for retailers in your local area.</p>
+                </div>
+                <img src="images/branding_shop.jpg" width="1000" height="258" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Let's hit<br /> the shops</h3>
+                    <p>Check out the list below for retailers in your local area.</p>
+                </div>
+                <img src="images/branding_shop.jpg" width="1000" height="258" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Let's hit<br /> the shops</h3>
+                    <p>Check out the list below for retailers in your local area.</p>
+                </div>
+                <img src="images/branding_shop.jpg" width="1000" height="258" alt="" />
+            </div>
+        </div>
+            
+        <div id="myController" class="clearfix">
+            <span class="jFlowPrev">Prev</span>
+            <span class="jFlowControl">1</span>
+            <span class="jFlowControl">2</span>
+            <span class="jFlowControl">3</span>
+            <span class="jFlowNext">Next</span>
+        </div>            
+    </div><!-- END .branding -->
+    
+    <div class="content content-shop clearfix">
+    	<div class="main clearfix">
+        	<div class="col-one clearfix">
+            	<h2>Stockists</h2>
+                <p>Racing Vet Hoof Gel Kits are available in the following states/territories:</p>
+                <div class="toggler">
+                    <div class="toggle">
+                        <h3><a class="" href="#">New South Wales</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Victoria</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Queesland</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">South Australia</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Western Australia</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Tasmania</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Australian Capital Territory</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="toggle">
+                        <h3><a class="" href="#">Northern Territory</a></h3>
+                        <div style="display: none;" class="answer">
+                            <div class="col-left">
+                                <h4>Retail Name	 01</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                            <div class="col-right">
+                                <h4>Retail Name	 02</h4>
+                                <p>No. Street address<br />Suburb State 1234<br />T  00 0000 0000<br />F  00 0000 0000<br />info@domainname.com.au<p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- END .toggler -->
+                <hr />
+            </div>
+            
+            <div class="col-two">
+                <h3>Shop</h3>
+                <ul class="side-menu">
+                    <li class="current"><a href="#">Stockists</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Shipping Information</a></li>
+                </ul>
+                <hr />
+                <img src="images/logo_australian_made.png" width="108" height="94" alt="" />
+            </div>
+        </div>
+        
+        <div class="sidebar">
+        	<ul class="product">
+            	<li class="detail">
+                	<img src="images/product_img_sample.jpg" width="91" height="91" alt="" />
+                    <span>
+                        <a href="#" class="name">Racing Vet Hoof Gel Kit</a>
+                        <a href="#" class="zoom">Zoom in</a>
+					</span>
+                </li>
+                <li class="price">
+                	<p>
+                    	<span class="actual">AUD$34.95 <small>each</small></span>
+                        <span><small class="order">Order 10 or more for</small>AUD$31.40 <small>each</small></span>
+                    </p>
+                </li>
+                <li class="qty">
+                	<p>Add a Qty to Cart <input name="" type="text" /></p>
+                </li>
+                <li class="cart">
+                	<p><a href="#">View my Shopping Cart</a></p>
+                </li>
+                <li class="checkout">
+                	<p><a href="#">Secure Checkout</a></p>
+                </li>
+                <li class="send">
+                	<p><a href="#">Send to a Friend</a></p>
+                </li>
+            </ul>
+        </div>
+    </div><!-- END .content -->
+    
+    <div id="footer">
+    	<ul>
+        	<li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop Online</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="#">Term &amp; Condition of use</a></li>
+            <li><a href="#">Privacy Disclaimer</a></li>
+        </ul>
+        <p>
+        	&copy; 2011 Racing Vet | Proudly Australian Made.
+            <a href="#"><img src="images/social_icon_fb.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_tw.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_rss.png" width="25" height="25" alt="" /></a>
+        </p>
+    </div>
+    
+</div><!-- END #wrapper -->
+
+</body>
+</html>

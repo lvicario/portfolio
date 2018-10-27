@@ -1,0 +1,12 @@
+/* toggler */
+.toggler						{margin: 15px 0; font-size: 11px; font-family: Arial, Helvetica, sans-serif;}
+.toggle							{margin: 0 0 5px;}
+.toggler h3						{margin: 0 0 5px; padding: 0; font-size: 11px; font-family: Arial, Helvetica, sans-serif; text-transform: uppercase; border: none;}
+.toggler h3 a					{display: block; padding: 5px 10px; color: #636466; background: #e5f7fd url(../images/toggler_bullet_plus.png) no-repeat 98% 50%;}
+.toggler h3 a:hover				{background-image: url(../images/toggler_bullet_minus.png); text-decoration: none;}
+.toggler h3 a.current,
+.toggler h3 a.current:hover		{background-image: url(../images/toggler_bullet_minus.png);}
+.answer							{padding: 10px 10px 1px; overflow: hidden;}
+
+/* Content */
+.toggler h4						{margin: 0; font-size: 11px; text-transform: uppercase; color: #00aeef;}

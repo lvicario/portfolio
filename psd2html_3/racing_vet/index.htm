@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Homepage</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "1000px",
+		height: "348px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="index.htm">Racing Vet</a></h1>
+        <ul>
+        	<li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </div><!-- END #header -->
+    <div class="branding">
+        <div id="slides">
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Racing Vet Hoof Care Kit</h3>
+                    <p>A new and effective alternative to the traditional hoof poultice. The Racing Vet Hoof Gel is a unique formulation utilising the drawing and soothing properties of essential oils for the treatment of hoof abscesses, sole bruises and corns.</p>
+                    <a class="more">Find out more</a>
+                </div>
+                <img src="images/branding_horse.jpg" width="1000" height="348" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Racing Vet Hoof Care Kit</h3>
+                    <p>A new and effective alternative to the traditional hoof poultice. The Racing Vet Hoof Gel is a unique formulation utilising the drawing and soothing properties of essential oils for the treatment of hoof abscesses, sole bruises and corns.</p>
+                    <a class="more">Find out more</a>
+                </div>
+                <img src="images/branding_horse.jpg" width="1000" height="348" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>Racing Vet Hoof Care Kit</h3>
+                    <p>A new and effective alternative to the traditional hoof poultice. The Racing Vet Hoof Gel is a unique formulation utilising the drawing and soothing properties of essential oils for the treatment of hoof abscesses, sole bruises and corns.</p>
+                    <a class="more">Find out more</a>
+                </div>
+                <img src="images/branding_horse.jpg" width="1000" height="348" alt="" />
+            </div>
+        </div>
+            
+        <div id="myController" class="clearfix">
+            <span class="jFlowPrev">Prev</span>
+            <span class="jFlowControl">1</span>
+            <span class="jFlowControl">2</span>
+            <span class="jFlowControl">3</span>
+            <span class="jFlowNext">Next</span>
+        </div>            
+    </div><!-- END .branding -->
+    
+    <div class="content clearfix">
+    	<div class="main clearfix">
+        	<div class="col-one clearfix">
+            	<h2>Welcome</h2>
+                <div class="col-left">
+                	<p class="welcome-txt">Racing Vet is an exciting new company committed to bring innovative and effective over the counter products to the racing industry.</p>
+                </div>
+                <div class="col-right">
+                	<p>Racing Vet is staffed by industry insiders who understand the extraordinary job our racehorses do for us when they head out to the track. The goal of every Racing Vet product is to help keep our horses in great shape, so they can put in great performances.</p>
+                    <p>Please take your time to browse the Racing Vet website. If you decide to purchase, please rest assured that we have a secure online payment process and your order will be delivered to your door.</p>
+                </div>
+                <hr />
+            </div>
+            
+            <div class="col-two">
+            	<div class="special">
+                    <h3>August Special</h3>
+                    <p><span class="txt-one">All orders eligible for</span> <span class="txt-two">Free</span> <span class="txt-three">postage &amp; handling</span> <span class="txt-four">to anywhere in</span>  <span class="txt-five">Australia.</span></p>
+                    <p class="btn"><a href="#">Find out more</a></p>
+				</div>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+        	<div class="newsletter">
+                <h3>Join Us</h3>
+                <p>Subscribe to our newsletter for special deals and new product launches. We promise not to bother you all time. We’ll only contact you when our news is exciting.</p>
+				<p>
+                	<input name="" type="text" value="Name" onfocus="if (this.value == 'Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Name';}" />
+                    <input name="" type="text" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" />
+				</p>
+                <p class="btn"><input name="" type="submit" value="Join Now" /></p>
+			</div>
+        </div>
+    </div><!-- END .content -->
+    
+    <div id="footer">
+    	<ul>
+        	<li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop Online</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="#">Term &amp; Condition of use</a></li>
+            <li><a href="#">Privacy Disclaimer</a></li>
+        </ul>
+        <p>
+        	&copy; 2011 Racing Vet | Proudly Australian Made.
+            <a href="#"><img src="images/social_icon_fb.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_tw.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_rss.png" width="25" height="25" alt="" /></a>
+        </p>
+    </div>
+    
+</div><!-- END #wrapper -->
+
+</body>
+</html>

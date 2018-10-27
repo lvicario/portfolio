@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Black Snow Teaser</title>
+<link href="css/style.css" rel="stylesheet" media="screen, projection">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+
+<header id="Header">
+	<div class="inner">
+        <h1 class="logo"><a  href="#">Black Snow</a></h1>
+        <p class="webshop"><a href="#">Besøg vores webshop</a></p>
+    </div>
+</header>
+
+<section id="Content">
+	<header>
+    	<h1>Fedt skiudstyr, øl og godt selskab?</h1>
+        <p>I samarbejde med CBS skituren 2012, inviterer vi pa Blacksnow After Dark",som kort sagt handler om fedt skiudstyr,ol og godt selskab!</p>
+        <p>Eventet finder sted I vores showroom i midten af byen. Der vil vaere store besparelser pa alt det nyeste skitoj og skiudstyr,som netop er lander pa vores lager. Tilmeld dig med det samme. Pladsen i vores showrrom er begraenset,sa vi stopper for tilmeldingen, nar der er fyldt op.</p>
+    </header>
+    <form action="" method="get">
+    	<h2>Tilmeld dig eventet herunder</h2>
+        <ul>
+        	<li>
+            	<span class="num">1</span>
+                <div class="col1"><label for="Oktober">31. Oktober (Kl. 18 - 22)</label> <input type="radio" name="radio1" id="Oktober"></div>
+                <div class="col2"><label for="November">31. Oktober (Kl. 18 - 22)</label> <input type="radio" name="radio1" id="November"></div>
+            </li>
+            <li>
+            	<span class="num">2</span>
+                <div class="col1"><label for="Mand">Mand</label> <input type="radio" name="radio2" id="Mand"></div>
+                <div class="col2"><label for="Kvinde">Kvinde</label> <input type="radio" name="radio2" id="Kvinde"></div>
+            </li>
+            <li>
+            	<span class="num">3</span>
+                <div class="col1"><label for="Ski">Ski</label> <input type="radio" name="radio3" id="Ski"></div>
+                <div class="col2"><label for="Snowboard">Snowboard</label> <input type="radio" name="radio3" id="Snowboard"></div>
+            </li>
+        </ul>
+        <input name="" type="text" value="Indtast din e-mail.." onFocus="if (this.value == 'Indtast din e-mail..') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Indtast din e-mail..';}">
+        <input name="" type="submit" value="Tilmeld mig uforpligtende">
+        <p>Det med småt: Vi har noget godt, sender vi dig også tilbud på e-mail</p>
+    </form>
+    <img src="images/logos.png" width="980" height="236" alt="">
+</section>
+
+<footer id="Footer">
+	<div class="inner">
+        <h2>Blackshow <span></span></h2>
+        <p>
+            Blacksnow.ApS<br>
+            Store Kannikestræde 6 1.th<br>
+            1169 København K<br>
+            CVR: 34593329
+        </p>
+        <img src="images/cards_logo.png" width="165" height="14" alt="">
+	</div>
+</footer>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.ezmark.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $('input[type="radio"]').ezMark();
+    }); 
+</script>
+
+</body>
+</html>

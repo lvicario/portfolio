@@ -1,0 +1,212 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+	font-family: 'Museo300';
+	src: url('../type/Museo300-Regular.eot');
+	src: local('☺'), url('../type/Museo300-Regular.woff') format('woff'), url('../type/Museo300-Regular.ttf') format('truetype'), url('../type/Museo300-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo700';
+	src: url('../type/Museo700-Regular.eot');
+	src: local('☺'), url('../type/Museo700-Regular.woff') format('woff'), url('../type/Museo700-Regular.ttf') format('truetype'), url('../type/Museo700-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 12px Arial, Helvetica, sans-serif; line-height: normal; text-decoration: none; text-align: center; color: #666; background: #e7e7e7 url(../images/bg_texture.jpg) no-repeat center top; margin: 0; padding: 0 0 40px;}
+a							{text-decoration: none; outline: none; color: #00aeef;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 1em;}
+h1							{font-size: 24px;}
+h2							{font-size: 24px;}
+h3							{font-size: 18px;}
+h4, h5, h6					{font-size: 14px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+hr							{clear: both; height: 1px; margin: 0 0 1em; color: #808080; background-color: #808080;  border: 0 none;}
+input[type="text"],
+textarea					{padding: 7px 10px; background-color: #e5f7fd; border: none; color: #6d6e71; font-family: Arial, Helvetica, sans-serif;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* WRAPPER ===================================== */
+#wrapper 						{width: 1000px; text-align: left; margin: 0 auto;}
+
+/* HEADER ===================================== */
+#header							{height: 100px;}
+#header h1						{margin: 0;}
+#header h1 a					{float: left; display: inline; width: 201px; height: 62px; margin: 21px 0 0 16px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+#header ul						{float: right; display: inline; margin: 64px 15px 0 0; list-style-type: none;}
+#header ul li					{display: inline;}
+#header ul li a					{margin-left: 45px; color: #636466; font: 14px Museo300, Arial, sans-serif; text-transform: uppercase;}
+#header ul li a:hover,
+#header ul li.current a			{color: #00aeef; text-decoration: none;}
+
+/* Branding === */
+.branding .info					{width: 266px; padding: 1px 0; color: #fff; font-family: 'Museo300'; position: absolute; top: 65px; left: 122px;}
+.branding .info h3				{margin-bottom: 8px; padding-bottom: 8px; font-size: 35px; text-transform: uppercase; color: #00aeef; line-height: 35px; border-bottom: 3px solid #fff;}
+.branding .info p				{margin-bottom: 8px; padding-bottom: 8px; font-size: 14px; border-bottom: 3px solid #fff;}
+.branding .info a.more			{padding-right: 12px; color: #fff; font-size: 10px; text-transform: uppercase; background: url(../images/more_icon.png) no-repeat right center; cursor: pointer;}
+
+.branding						{width: 1000px; height: 348px; position: relative;}
+.branding						{-moz-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.20); -webkit-box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.20); box-shadow: -3px 5px 5px 0px rgba(0,0,0,0.20); behavior: usrl(js/PIE.htc);}
+#jFlowSlide						{}
+#slides							{}
+.jFlowSlideContainer			{overflow: hidden !important;}
+.slide-wrapper					{position: relative;}
+#myController					{}
+#myController .jFlowPrev,
+#myController .jFlowNext		{display: block; width: 33px; height: 65px; text-indent: -9999px; cursor: pointer; position: absolute; top: 124px;}
+#myController .jFlowPrev		{background: url(../images/slider_btn_prev.png) no-repeat; left: 20px;}
+#myController .jFlowNext		{background: url(../images/slider_btn_next.png) no-repeat; right: 20px;}
+.jFlowControl					{display: none; /*float: left; display: inline; width: 9px; height: 9px; margin-left: 6px; background: url(../images/slider_bullets.png) no-repeat left top; text-indent: -9999px; cursor: pointer;*/}
+.jFlowControl:hover,
+.jFlowSelected					{background-position: left bottom;}
+
+/* Branding Media */
+.branding-media					{height: 303px;}
+.branding-media .info			{width: 338px; top: 75px; left: 85px;}
+.branding-media .info p			{font-size: 20px;}
+
+/* Branding About */
+.branding-about .info			{top: 85px; left: 106px;}
+.branding-about .info p			{font-size: 20px;}
+
+/* Branding Shop */
+.branding-shop					{height: 258px;}
+.branding-shop .info			{width: 260px; top: 50px; left: 85px;}
+.branding-shop .info p			{font-size: 20px;}
+.branding-shop #myController .jFlowPrev,
+.branding-shop #myController .jFlowNext	{top: 95px;}
+
+/* Branding Contact */
+.branding-contact .info			{width: 308px; top: 85px; left: 106px;}
+.branding-contact .info p		{font-size: 20px;}
+
+/* CONTENT ===================================== */
+.content						{padding: 15px 0 15px 0; background-color: #fff;}
+.content h2						{margin-bottom: 10px; padding-bottom: 2px; font-family: 'Museo300'; text-transform: uppercase; color: #00aeef; border-bottom: 1px solid #808080;}
+.content h3						{margin-bottom: 10px; padding-bottom: 2px; font-family: 'Museo300'; text-transform: uppercase; color: #00aeef; border-bottom: 1px solid #00aeef; margin-top: 8px;}
+.main							{float: left; display: inline; width: 709px; margin-left: 23px;}
+.main .col-one					{float: right; display: inline; width: 463px;}
+.main .col-one .col-left		{float: left; display: inline; width: 230px;}
+.main .col-one .col-right		{float: right; display: inline; width: 210px;}
+.main .col-two					{float: left; display: inline; width: 194px; font-family: 'Museo300';}
+.sidebar						{float: right; display: inline; width: 207px; margin-right: 15px;}
+
+/* General content styles */
+p.btn							{padding-bottom: 7px; border-bottom: 1px solid #00aeef;}
+p.btn a, p.btn input			{margin: 0; padding: 0 13px 0 0; border: none; background: url(../images/icon_arrow_blue.png) no-repeat right center; text-align: left; color: #00aeef; font-size: 11px; text-transform: uppercase; cursor: pointer;}
+p.welcome-txt					{color: #00aeef; font-weight: bold; font-size: 15px; text-transform: uppercase;}
+.sidebar hr, .main .col-two hr	{color: #00aeef; background-color: #00aeef;}
+.two-column						{-moz-column-count: 2; -webkit-column-count: 2; -moz-column-gap: 28px; -webkit-column-gap: 20px; column-count: 2; column-gap: 28px;}
+.highlight						{color: #00aeef;}
+.col-two p.socials				{}
+.col-two p.socials a			{display: block; padding-left: 27px; background: no-repeat left center;}
+.col-two p.socials a.fb			{background-image: url(../images/side_social_fb.png); margin-bottom: 8px;}
+.col-two p.socials a.tw			{background-image: url(../images/side_social_tw.png);}
+
+/* Newsletter */
+.newsletter input[type="text"]	{width: 177px; margin-bottom: 8px; padding: 10px 15px;}
+
+/* Special */
+.special p						{text-transform: uppercase; color: #00aeef;}
+.special p span.txt-one			{font-size: 25px; line-height: 24px;}
+.special p span.txt-two			{font-size: 70px; font-family: 'Museo700'; line-height: 58px;}
+.special p span.txt-three		{font-size: 17px; line-height: 15px;}
+.special p span.txt-four		{font-size: 20px; line-height: 22px;}
+.special p span.txt-five		{font-size: 32px;}
+/* Side Menu */
+.side-menu						{list-style-type: none;}
+.side-menu li					{display: inline;}
+.side-menu li a					{display: block; margin: 0 0 6px -23px; padding-left: 23px; font-size: 14px; color: #6d6e71; text-transform: uppercase;}
+.side-menu li a:hover,
+.side-menu li.current a			{background: url(../images/blue_arrow.png) no-repeat left center; color: #00aeef; text-decoration: none;}
+
+/* About */
+.content-about .side-menu a		{font-size: 18px;}
+
+/* Media */
+.content-media .col-left,
+.content-media .col-right				{margin-bottom: 10px; min-height: 175px; border-bottom: 1px solid #808080;}					
+.content-media .col-two a				{color: #b3b3b3;}
+.content-media .col-one	h3				{font-family: Arial, Helvetica, sans-serif; border: none;}
+.content-media .col-one .socials		{min-height: 200px;}
+.content-media .col-one	h4				{padding-left: 30px; background: no-repeat left center; color: #00aeef;}
+.content-media .col-left h4				{background-image: url(../images/side_social_fb.png)}
+.content-media .col-right h4			{background-image: url(../images/side_social_tw.png)}
+.content-media .topics ul				{list-style-type: none;}
+.content-media .topics ul li			{margin-bottom: 15px;}
+.content-media .topics ul li a			{padding-right: 16px; background: url(../images/topics_arrow.png) no-repeat right center; color: #636466;}
+.content-media .topics ul li a:hover,
+.content-media .topics ul li.current a	{color: #00aeef; text-decoration: none; background-image: url(../images/topics_arrow_hover.png);}
+.content-media .archive ul				{list-style-type: none;}
+.content-media .archive ul li			{}
+.content-media .archive ul li a			{font-size: 13px; color: #999; text-transform: uppercase;}
+.content-media .archive ul li a:hover,
+.content-media .archive ul li.current a	{color: #00aeef; text-decoration: none;}
+
+/* Shop */
+.content-shop .col-two img				{margin-top: 40px;}
+ul.product								{list-style-type: none;}
+ul.product li							{background: no-repeat left center; border-bottom: 1px solid #00aeef; color: #00aeef; text-transform: uppercase;}
+ul.product li p							{margin: 0; padding: 7px 0 7px 34px; background: url(../images/shop_arrow_blue.png) no-repeat right center;}
+ul.product li.detail					{padding-bottom: 15px; overflow: hidden;}
+ul.product li.detail img				{float: left; display: inline;}
+ul.product li.detail span				{float: left; display: inline; width: 85px; margin: 44px 0 0 15px;}
+ul.product li.detail a.name				{}
+ul.product li.detail a.zoom				{padding-left: 20px; background: url(../images/shop_icon_zoom.png) no-repeat left center; font-size: 10px; color: #6d6e71;}
+ul.product li.price						{background-image: url(../images/shop_icon_price.png); background-position: 0% 16%;}
+ul.product li.price p					{background: none;}
+ul.product li.price p span				{display: block; font-size: 15px; font-weight: bold;}
+ul.product li.price p span small		{font-size: 11px; color: #626366; text-transform: lowercase; font-weight: normal;}
+ul.product li.price p span small.order	{display: block; color: #00aeef; text-transform: uppercase;}
+ul.product li.price p span.actual		{padding-bottom: 5px; margin-bottom: 5px; border-bottom: 1px dashed #626366;}
+ul.product li.qty						{background-image: url(../images/shop_icon_quantity.png);}
+ul.product li.qty input					{width: 20px; margin-left: 3px; padding: 3px 5px;}
+ul.product li.cart						{background-image: url(../images/shop_icon_cart.png);}
+ul.product li.checkout					{background-image: url(../images/shop_icon_checkout.png);}
+ul.product li.send						{background-image: url(../images/shop_icon_email.png);}
+
+/* Contact */
+.content-contact .col-two				{font-family: Arial, Helvetica, sans-serif; font-size: 13px;}
+.content-contact .col-two strong		{text-transform: uppercase; color: #00aeef;}
+.content-contact .col-two .btn			{margin-top: 20px;}
+.content-contact .sidebar p				{margin: 45px 0 60px; font-size: 14px; font-family: 'Museo300'; color: #00aeef; text-transform: uppercase;}
+.content-contact .sidebar img			{}
+.content-contact .col-one form			{margin-top: 20px;}
+.content-contact .col-one form p		{margin: 0 0 6px -3px;}
+.content-contact .col-one form input	{width: 206px; margin-left: 3px; }
+.content-contact .col-one form textarea {width: 441px; height: 50px;}
+.content-contact .col-one .one-col input {width: 438px;}
+.content-contact .col-one form input,
+.content-contact .col-one form textarea	{font-size: 11px;}
+.content-contact .col-one .submit input	{width: 75px; margin: 0; padding: 5px 13px 5px 5px; border: none; background: #00aeef url(../images/icon_arrow_white.png) no-repeat 85% 50%; text-align: left; color: #fff; font-size: 11px; text-transform: uppercase; cursor: pointer;}
+
+
+
+/* FOOTER 1 ==================================== */
+#footer							{height: 43px; background-color: #000; color: #fff; font-size: 10px;}
+#footer a						{color: #fff;}
+#footer ul						{float: left; display: inline; margin: 13px 0 0 20px; list-style-type: none;}
+#footer ul li					{display: inline; padding: 0 5px; border-left: 1px solid #fff;}
+#footer ul li a					{text-transform: uppercase;}
+#footer ul li:first-child		{padding-left: 0; border: none;}
+#footer p						{float: right; display: inline; margin: 9px 15px 0 0;}
+#footer p img					{margin-left: 2px; vertical-align: middle;}

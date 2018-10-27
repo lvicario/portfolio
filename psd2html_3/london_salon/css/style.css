@@ -1,0 +1,133 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'AyuthayaRegular';
+    src: url('../type/ayuthaya-webfont.eot');
+    src: url('../type/ayuthaya-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/ayuthaya-webfont.woff') format('woff'),
+         url('../type/ayuthaya-webfont.ttf') format('truetype'),
+         url('../type/ayuthaya-webfont.svg#AyuthayaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-weight: normal; line-height: normal; text-decoration: none; text-align: center; color: #000; background: #c9c9c9 url(../images/bg_pattern.png); margin: 0 0 40px; padding: 0;}
+a							{text-decoration: none; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 1em 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 18px; font-weight: normal;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+
+/* UTILITIES =================================== */
+.clearfix:after					{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix						{overflow: hidden;}
+* html .clearfix				{height: 1%;}
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* WRAPPER ===================================== */
+#wrapper 						{width: 813px; text-align: left; margin: 0 auto; }
+
+/* HEADER ====================================== */
+#header							{height: 80px; position: relative; z-index: 1;}
+#header h1						{margin: 0;}
+#header h1 a					{display: block; width: 336px; height: 227px; margin: 0; background: url(../images/logo.png) no-repeat; text-indent: -9999px; position: absolute; top: 0px; left: -52px;}
+#header p						{margin: 0; font-size: 14px; font-family: AyuthayaRegular, arial; letter-spacing: 1px; position: absolute; top: 38px; right: 10px;}
+#header p a img					{vertical-align: middle; margin: 0 3px;}
+#header p input					{vertical-align: middle; width: 130px; padding: 3px 5px; border: none; color: #b5b5b5; letter-spacing: 1px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+/* MAIN ====================================== */
+#main							{margin: 0; padding: 57px 0 1px; background: #fff; position: relative; z-index: 0; -moz-box-shadow: 4px 12px 32px #343434; -webkit-box-shadow: 4px 12px 32px #343434; box-shadow: 4px 12px 32px #343434;}
+#main .vip						{margin: 20px 0; padding-left: 23px; line-height: 19px; background: url(../images/bullet.png) no-repeat left center; font-size: 10px; text-transform: uppercase; color: #000; position: absolute; top: 0; right: 20px;}
+#main .container				{height: 423px; background-repeat: no-repeat; font-family: 'AyuthayaRegular', arial;}
+#main .container h2				{float: right; width: 398px; height: 44px; line-height: 44px; padding-left: 10px; margin: 0; text-transform: uppercase; letter-spacing: 4px; background-color: #950505; color: #fff; font-size: 20px; font-weight: normal;}
+#main .container .content		{float: right; clear: both; width: 340px; height: 359px; background-color: #fff; color: #000;}
+
+#main .story					{background-image: url(../images/bg_img_our_story.jpg);}
+#main .services					{background-image: url(../images/bg_img_our_services.jpg);}
+#main .team						{background-image: url(../images/bg_img_our_salon_team.jpg);}
+#main .products					{background-image: url(../images/bg_img_our_products.jpg);}
+#main .contact					{background-image: url(../images/bg_img_contact_us.jpg);}
+
+#main .story .content			{background-color: #d1d3d6;}
+#main .story .content p			{clear: both; padding: 0 30px; font-size: 15px; line-height: 24px; letter-spacing: -.5px;}
+#main .story .content p.nav		{float: right;}
+#main .story .content p a		{margin-left: 15px; color: #000; text-decoration: none; font-size: 11px; letter-spacing: -.5px; text-transform: uppercase;}
+#main .story .content p a:hover	{text-decoration: underline;}
+
+#main .services .content		{float: none; width: auto; height: auto; background: none; color: #fff; font-size: 14px; line-height: 20px;}
+#main .services h3				{margin-bottom: 0; text-transform:uppercase; text-decoration: underline; font-size: 15px;}
+#main .services  ul				{margin: 0 0 20px; list-style-type: none;}
+#main .services  ul li			{}
+#main .services  ul li span		{float: left; display: inline; width: 240px;}
+#main .services  div.col1		{float: left; display: inline; margin: 0 0 0 60px;}
+#main .services  div.col2		{float: left; display: inline; margin: 0 0 0 95px;}
+
+#main .team .content			{background-color: #f6f8f6;}
+#main .team .content ul			{margin: 33px 0 0 50px; list-style-type: none;}
+#main .team .content li			{margin-bottom: 10px;}
+#main .team .content li p		{float: left; width: 120px; margin-right: 20px; font-size: 18px; letter-spacing: 4px; text-align: right;}
+#main .team .content li p span	{font-size: 10px; letter-spacing: 0; display: block;}
+#main .team .content li p img	{float: right;}
+
+#main .products .content		{padding-top: 15px; height: 344px; text-align: center;}
+#main .products .content .kera	{margin-left: 30px;}
+
+#main .contact .content			{background-color: #dedddc; text-align: center; font-size: 14px;}
+#main .contact h3				{text-decoration: underline; letter-spacing: 1px;}
+#main .contact .sked			{margin-left: 90px; list-style-type: none;}
+#main .contact .sked li span	{float: left; text-align: left; width: 0px;}
+#main .contact ul.options li	{display: inline; margin: 0 5px;}
+#main .contact ul.options li a	{float: left; display: inline; padding-left: 20px; margin-left: 20px; background: url(../images/bullet.png) no-repeat left center; color: #000; font-family: Arial, Helvetica, sans-serif;}
+#main .contact ul.options li
+a:hover							{text-decoration: underline;}
+#main .contact p,
+#main .contact h3,
+#main .contact ul.options		{}
+
+#nav-main						{background-color: #950505; text-align: center;}
+#nav-main ul					{margin: 0;}
+#nav-main ul li					{display: inline;}
+#nav-main ul li a				{padding: 0 22px; line-height: 22px; font-size: 16px; color: #fff; text-transform: uppercase; font-family: AyuthayaRegular, arial; letter-spacing: -.5px;}
+#nav-main ul li a:hover			{}
+
+#promo							{margin: 29px 0 0; padding: 15px 0; background: #000000; list-style-type: none;}
+#promo li						{float: left; display: inline; width: 252px; min-height: 295px; height:auto !important; height: 295px; margin-left: 14px; background: #dedddd no-repeat left top;}
+#promo li.awapuhi				{background-image: url(../images/promo_awapuhi.jpg);}
+#promo li.hotheads				{background-image: url(../images/promo_hotheads.jpg); background-position: left bottom;}
+#promo li.pass-on				{background-image: url(../images/promo_pass_on.jpg);}
+#promo li p						{margin: 0; padding: 178px 10px 12px 12px;}
+#promo li.hotheads p			{padding-top: 15px; padding-bottom: 170px;}
+#promo li p a					{display: block; margin-top: 10px; font-size: 11px; color: #000; text-decoration: underline; text-align: center;}
+#promo li p a:hover				{text-decoration: none;}
+
+#nav-footer						{text-align: center;}
+#nav-footer ul					{margin: 20px 0;}
+#nav-footer ul li				{display: inline;}
+#nav-footer ul li a				{margin: 0 5px; font-size: 11px; color: #000;}
+#nav-footer ul li a:hover		{}
+
+.copyright						{margin-top: 20px; font-size: 11px;}
+
+/* Landing Page */
+.welcome						{background: #fff; margin-top: 30px;}
+.welcome #wrapper				{width: 814px; height: 575px; background: url(../images/img_landing_page.jpg) no-repeat; position: relative;}
+.welcome #wrapper .copyright	{color: #636060; position: absolute; bottom: -50px; left: 0;}
+
+.welcome #wrapper h1			{margin: 0;}
+.welcome #wrapper h1 a			{display: block; width: 261px; height: 175px; margin: 0; background: url(../images/logo_welcome.png) no-repeat; text-indent: -9999px; position: absolute; top: 220px; left: 326px;}
+
+

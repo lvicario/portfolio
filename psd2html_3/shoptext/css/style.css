@@ -1,0 +1,190 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+    font-family: 'ArialBlack';
+    src: url('../type/ariblk-webfont.eot');
+    src: url('../type/ariblk-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/ariblk-webfont.woff') format('woff'),
+         url('../type/ariblk-webfont.ttf') format('truetype'),
+         url('../type/ariblk-webfont.svg#ArialBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font-family: Arial, Helvetica, sans-serif;	font-size: 12px; font-weight: normal; line-height: normal; text-decoration: none; text-align: center; color: #333; background: #3399cc; margin: 0; padding: 0 0 30px;}
+a							{text-decoration: none; outline: none; color: #4e70a5;}
+a:hover						{text-decoration: underline; color: #ff9900;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 1em 0;}
+h1							{font-size: 24px;}
+h2							{font-size: 18px;}
+h3							{font-size: 14px;}
+h4, h5, h6					{font-size: 12px;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+
+#header p.advantage strong,
+#header .nav li a,
+.top-info p strong,
+.toolbar .clipped strong,
+.toolbar .clipped a,
+.product-list p.badge,
+.alert-box h3					{font-family: 'ArialBlack'; letter-spacing: -1px; font-weight: normal;}
+
+button::-moz-focus-inner	{padding:0; border:0;} /* FF Fix */
+button						{-webkit-border-fit:lines;} /* <- Safari & Google Chrome Fix */
+button						{overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer;}
+button span					{display:block; height:25px; border: 4px solid #e8f1ff; background:#ff9900; padding:0 20px; font-family: 'ArialBlack'; font-size: 15px; text-align:center; white-space:nowrap; color:#fff; -moz-border-radius: 15px; -webkit-border-radius: 15px; border-radius: 15px;}
+button:hover span			{}
+button span span			{border:0; padding:0; line-height: 24px;}
+submit.button				{}
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* MAIN LAYOUT ===================================== */
+#wrapper 						{width: 1000px; min-height: 1154px; text-align: center; background: url(../images/bg_wrapper.jpg) no-repeat left top; margin: 0 auto;}
+#page							{width: 940px; text-align: left; margin: 0 auto; position: relative; z-index: 5;/*border: 1px solid #fff;*/}
+
+/* HEADER ====================================== */
+#header							{height: 309px; text-align: left; position: relative;}
+#header h1						{margin: 0;}
+#header h1 a					{float: left; display: inline; width: 292px; height: 122px; margin: 0 0 0 6px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+#header	p						{margin: 0;}
+#header p.advantage				{width: 425px; font-weight: bold; position: absolute; top: 105px; left: 118px;}
+#header p.advantage small		{display: block; font-size: 13.08px;}
+#header p.advantage strong		{display: block; font-size: 34px; line-height: 34px;}
+#header p.advantage span		{float: right; display: inline; width: 320px; height: 32px; line-height: 29px; text-align: center; margin: 6px 0 0; font-size: 18px; color: #fff; background: url(../images/bg_orange_box.png) no-repeat left center;}
+#header .cellphones				{position: absolute; bottom: 0; right: 48px;}
+#header .nav					{margin: 0; list-style-type: none; position: absolute; top: 43px; right: 30px;}
+#header .nav li					{display: inline;}
+#header .nav li a				{float: left; display: inline; font-size: 22px; color: #fff;}
+#header .nav li.coupons a		{width: 117px; height: 45px;  text-align: center; margin: 2px 0 0 0; background: url(../images/txt_coupons_bg.png) no-repeat;}
+#header .nav li.how-works a		{margin: 0 29px; line-height: 36px;}
+#header .nav li.get-alerts a	{width: 227px; height: 42px; line-height: 35px; text-align: center; background: url(../images/txt_coupon_alerts_bg.png) no-repeat;}
+#header .connect				{position: absolute; top: 10px; right: 30px;}
+#header .connect a.share		{float: right; display: inline; height: 20px; line-height: 20px; padding-right: 25px; margin-right: 30px; background: url(../images/icon_plus.png) no-repeat right center; color: #cce5f2; font-weight: bold;}
+#header .connect .fb-like		{float: right; display: inline;}
+#header img.star				{position: absolute; right: 0; top: 0;}
+
+/* TOP INFO ====================================== */
+.top-info							{color: #fff; font-weight: bold; padding: 1px 0; margin-top: -15px;}
+.top-info p							{margin: 0;}
+.top-info p a						{}
+.top-info p strong					{font-size: 28px;}
+.top-info p span					{float: left; display: inline; margin-right: 5px; font-size: 10px; text-align: right; line-height: 10px;}
+.top-info p a						{color: #fff; text-decoration: underline;}
+.top-info .info						{float: left; display: inline; width: 451px; font-size: 14px;}
+.top-info .info strong				{}
+.top-info .location					{float: left; display: inline; width: 169px; margin-top: 10px;}
+.top-info .location span			{width: 68px;}
+.top-info .location span a			{}
+.top-info .location strong			{line-height: 22px;}
+.top-info .store-card-coupons		{float: right; display: inline; width: 317px; text-align: right; margin-top: 10px;}
+.top-info .store-card-coupons span	{width: 52px;}
+.top-info .store-card-coupons a		{display: inline-block; height: 26px;}
+.top-info .store-card-coupons a	img	{margin-left: 2px;}
+
+/* TOOLBAR ====================================== */
+.toolbar							{clear: both; margin: 5px 0 20px;}
+.toolbar .view-mode					{float: left; margin-top: 7px;}
+.toolbar .view-mode span.txt		{float: left; display: inline; margin-right: 8px; color: #fff; line-height: 27px; font-size: 14px; font-weight: bold;}
+.toolbar .clipped					{float: right; width: 495px; height: 40px; line-height: 40px; text-align: left; padding: 0 3px 0 15px; background-color: #333; color: #fff; font-size: 19px; border: 3px solid #a1d0e7; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.toolbar .clipped strong			{}
+.toolbar .clipped a					{float: right; display: inline; width: 114px; height: 29px; line-height: 28px; margin: 3px 0 0 0px; text-align: center; color: #fff; font-size: 15px; text-transform: uppercase; background-color: #ff9900; border: 2px solid #a1a1a1; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 6px;}
+
+/* PRODUCT LIST ====================================== */
+.product-list						{margin-left: -20px;}
+.product-list li					{float: left; display: inline; width: 219px; margin: 0 0 20px 20px; background: url(../images/product_list_bg_top.png) no-repeat left top; text-align: center;}
+.product-list div					{width: 175px; min-height: 160px; height:auto !important; height: 160px; padding: 22px 22px 65px 22px; text-align: left; background: url(../images/product_list_bg_bottom.png) no-repeat left bottom; position: relative;}
+.product-list p						{margin: 0;}
+.product-list h3					{margin: 0 0 6px; padding-right: 13px; font-size: 18px; line-height: 19px; font-weight: bold;}
+.product-list p.thumb				{margin: 22px 0 13px;}
+.product-list p.thumb img			{width: 100px;}
+.product-list p.details				{padding-right: 13px; font-size: 11px; line-height: 13px;}
+.product-list p.details a			{text-decoration: underline;}
+.product-list p.badge				{width: 101px; height: 101px; line-height: 101px; text-align:center; background: url(../images/badge.png) no-repeat left top; color: #fff; font-size: 40px; letter-spacing: 0; position: absolute; top: -16px; right: -15px;}
+.product-list a.share				{display: block; height: 16px; line-height: 16px; padding-left: 20px; background: url(../images/icon_plus_share.png) no-repeat left center; color: #666; font-size: 14px; font-weight: bold; position: absolute; bottom: 27px; left: 23px;}
+.product-list a.clip				{position: absolute; bottom: 15px; right: 15px;}
+.product-list a.clip img			{width: auto; height: auto;}
+.reg								{margin-right: 10px; position: relative;}
+.reg span							{font-size: 10px; position: absolute; top: -3px; right: -7px;}
+.product-list li.clipd				{opacity: 0.5; filter: alpha(opacity=50);}
+
+.alert-box											{width: 552px; height: 364px; padding: 42px 37px 0 30px; font-size: 14px; color: #333; font-weight: bold; text-align: left; background: url(../images/bg_alert_box.png) no-repeat;}
+.alert-box h3										{margin: 0 0 0 0; padding: 0 32px 36px; font-size: 22px; color: #4e70a5; background: url(../images/border_bottom_dashed.png) repeat-x left bottom;}
+.alert-box ul										{margin-top: 45px; list-style-type: none;}
+.alert-box ul li									{clear: both; overflow: hidden; margin-bottom: 20px; padding-left: 30px;}
+.alert-box ul li span								{float: left; display: inline; width: 110px; line-height: 28px;}
+.alert-box ul li .jqTransformInputWrapper			{float: left; display: inline;}
+.alert-box li.email .jqTransformInputWrapper		{width: 325px !important;}
+.alert-box li.email .jqTransformInputWrapper input	{width: 305px;}
+.alert-box li.phone									{margin-bottom: 35px;}
+.alert-box .area .jqTransformInputWrapper			{width: 75px !important;}
+.alert-box .area, .alert-box .number				{display: inline;}
+.alert-box .number .jqTransformInputWrapper			{width: 238px !important;}
+.alert-box button.button							{margin-right: 14px;}
+.alert-box button.button span						{height: 32px; font-size: 22px; width: auto; margin: 0;}
+.alert-box button.button span span					{line-height: 32px;}
+.alert-box button.cancel span						{background-color: #666;}
+.error ul											{margin-top: 0;}
+.alert-box p.error-message							{height: 50px; line-height: 50px; padding-left: 30px; color: #d8234d; background: url(../images/alert_box_error_text_bg.png) no-repeat left center;}
+.alert-box img.exclamation							{float: left; overflow: }
+
+/* DROPDOWN CONENT ====================================== */
+.dropdownBox										{text-align: left; visibility: hidden; position:absolute; z-index: 200;}
+a.close												{width: 20px; height: 20px; background: url(../images/btn_close.png) no-repeat; text-indent: -9999px; position: absolute; top: 2px; right: 3px; z-index: 200px;}
+/* More Info */
+.more-info											{margin: -205px 0 0 -113px;}
+.more-info ul										{}
+.more-info ul li									{width: 260px; height: 350px; background: #cbdffe url(../images/bg_top_gradient.png) repeat-x left top;}
+.more-info ul li div								{width: auto; padding: 22px 20px 65px 15px; min-height: 160px; height:auto !important; height: 160px; background: none;}
+.more-info ul li div p.thumb 						{}
+.more-info ul li div p.badge						{top: 8px; right: 25px;}
+.more-info ul li div a.share						{bottom: 0px; left: 15px;}
+.more-info ul li div a.clip							{bottom: -3px; right: 10px;}
+/* Coupon Options */
+.coupon-options										{margin: -256px 0 0 -107px; width: 260px; height: auto; font-size: 14px; font-weight: bold; text-align: left; background: #cbdffe url(../images/bg_top_gradient.png) repeat-x left top;}
+.coupon-options .option1							{margin: 0 15px; padding: 2px 0 7px; background: url(../images/border_bottom_dashed.png) repeat-x left bottom;}
+.coupon-options .option2							{margin: 0 15px; padding: 0 0 15px;}
+.coupon-options h3									{font-size: 16px; color: #4e70a5; line-height: 16px;}
+.coupon-options h3 span								{float: left; display: inline; width: 30px; height: 30px; line-height: 30px; margin-right: 12px; text-align: center; font-family: 'ArialBlack'; font-size: 18px; font-weight: normal; color: #fff; background: url(../images/number_bullet.png) no-repeat;}
+.coupon-options p									{clear: both;}
+.coupon-options p.intro								{color: #666;}
+.coupon-options p span								{display: block; margin-bottom: 7px;}
+.coupon-options p .jqTransformSelectWrapper			{width: 125px !important; color: #666; border-color: #94A7C3;}
+.coupon-options p .jqTransformSelectWrapper ul		{width: 125px !important; border-color: #94A7C3;}
+.coupon-options p .jqTransformInputWrapper			{width: 110px !important; float: left; display: inline; margin-right: 4px;}
+.coupon-options p .jqTransformInputWrapper input	{color: #666;}
+.coupon-options p .button							{float: left; display: inline; margin-top: -2px;}
+.coupon-options p small								{clear: both; display: block; font-size: 11px; font-weight: normal; color: #666;}
+.coupon-options .option2 h3							{margin-top: 10px;}
+.coupon-options .option2 p							{margin: 8px 0 10px;}
+.coupon-options .option2 button						{margin-top: -7px;}
+.load-option .option1, .print-option .option1		{background: none;}
+.print-option .option1								{padding-top: 100px; padding-bottom: 100px;}
+.print-option .option1 button.button				{margin-right: 14px;}
+.print-option .option1 button.button span			{height: 32px; font-size: 20px; width: auto; margin: 0;}
+.print-option .option1 button.button span span		{line-height: 30px;}
+/* loyality card */
+.loyality-card										{padding-top: 10px; width: 282px; height: auto; font-size: 14px; font-weight: bold; text-align: left;}
+.loyality-card .inner								{padding: 15px 15px 1px; background: #cbdffe url(../images/bg_top_gradient.png) repeat-x left top; position: relative;}
+.loyality-card p									{}
+.loyality-card p span								{display: block; margin-bottom: 7px;}
+.loyality-card p .jqTransformInputWrapper			{width: 225px !important; margin-bottom: 14px;}
+.loyality-card p button								{}
+.pointing-arrow										{display: block; width: 18px; height: 9px; background: url(../images/arrow_point_top.png) no-repeat; text-indent: -9999px; position: absolute; top: -9px; left: 13px;}
+
+

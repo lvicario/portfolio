@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.flow.1.2.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#myController").jFlow({
+		slides: "#slides",
+		controller: ".jFlowControl", // must be class, use . sign
+		slideWrapper : "#jFlowSlide", // must be id, use # sign
+		selectedWrapper: "jFlowSelected",  // just pure text, no sign
+		auto: true,		//auto change slide, default true
+		width: "1000px",
+		height: "348px",
+		duration: 600,  // time in miliseconds to transition one slide
+		interval: 5000, // this is the amount of milliseconds before the switch happens
+		prev: ".jFlowPrev", // must be class, use . sign
+		next: ".jFlowNext" // must be class, use . sign
+	});
+});
+</script>
+</head>
+
+<body>
+
+<div id="wrapper">
+    <div id="header">
+    	<h1><a href="index.htm">Racing Vet</a></h1>
+        <ul>
+        	<li><a href="index.htm">Home</a></li>
+            <li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </div><!-- END #header -->
+    <div class="branding branding-contact">
+        <div id="slides">
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>We'd Love to Hear from You.</h3>
+                    <p>If you would like to know more, please contact us, we’re only too happy to help.</p>
+                </div>
+                <img src="images/branding_contact.jpg" width="1000" height="348" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>We'd Love to Hear from You.</h3>
+                    <p>If you would like to know more, please contact us, we’re only too happy to help.</p>
+                </div>
+                <img src="images/branding_contact.jpg" width="1000" height="348" alt="" />
+            </div>
+            <div class="slide-wrapper">
+                <div class="info">
+                    <h3>We'd Love to Hear from You.</h3>
+                    <p>If you would like to know more, please contact us, we’re only too happy to help.</p>
+                </div>
+                <img src="images/branding_contact.jpg" width="1000" height="348" alt="" />
+            </div>
+        </div>
+            
+        <div id="myController" class="clearfix">
+            <span class="jFlowPrev">Prev</span>
+            <span class="jFlowControl">1</span>
+            <span class="jFlowControl">2</span>
+            <span class="jFlowControl">3</span>
+            <span class="jFlowNext">Next</span>
+        </div>            
+    </div><!-- END .branding -->
+    
+    <div class="content content-contact clearfix">
+    	<div class="main clearfix">
+        	<div class="col-one clearfix">
+            	<h2>Email Us</h2>
+                <p>If you would like to make a wholesale enquiry or would simply like to know more about our products, please contact us, we’re only too happy to help.</p>
+                <form action="" method="get">
+                	<p>
+                    	<input name="" type="text" value="First Name" onfocus="if (this.value == 'First Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'First Name';}" />
+                        <input name="" type="text" value="Last Name" onfocus="if (this.value == 'Last Name') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Last Name';}" />
+                    </p>
+                    <p>
+                    	<input name="" type="text" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Email';}" />
+                        <input name="" type="text" value="Contact Number" onfocus="if (this.value == 'Contact Number') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Contact Number';}" />
+                    </p>
+                    <p>
+                    	<input name="" type="text" value="Country" onfocus="if (this.value == 'Country') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Country';}" />
+                        <input name="" type="text" value="State" onfocus="if (this.value == 'State') {this.value = '';}" onblur="if (this.value == '') {this.value = 'State';}" />
+                    </p>
+                    <p class="one-col"><input name="" type="text" value="Subject" onfocus="if (this.value == 'Subject') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Subject';}" /></p>
+                    <p><textarea name="" cols="" rows="" onblur="this.value=!this.value?'Message':this.value;" onfocus="this.select()" onclick="this.value='';">Message</textarea></p>
+                    <p class="submit"><input name="" type="submit" value="Submit" /></p>
+                </form>
+            </div>
+            
+            <div class="col-two">
+                <h3>Contact Us</h3>
+                <p><strong>Address</strong><br />4/4-6 Guelph Street,<br />Somerville VIC 3912</p>
+                <p><strong>Postal</strong><br />PO Box 525 Somerville VIC 3912 </p>
+                <p>
+                    <strong>P</strong> 03 5977 5258<br />
+                    <strong>F</strong> 3 5978 0457<br />
+                    <strong>E</strong> lara@racingvet.com.au
+                </p>
+                <p class="btn"><a href="#">Find us on Google map</a></p>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+        	<p>All Racing Vet<br /> products are<br /> proudly<br /> Australian <br />made &amp; owned</p>
+            <img src="images/logo_australian_made.png" width="108" height="94" alt="" />
+        </div>
+    </div><!-- END .content -->
+    
+    <div id="footer">
+    	<ul>
+        	<li><a href="about.htm">About</a></li>
+            <li><a href="media.htm">Media</a></li>
+            <li><a href="shop.htm">Shop Online</a></li>
+            <li><a href="contact.htm">Contact</a></li>
+            <li><a href="#">Term &amp; Condition of use</a></li>
+            <li><a href="#">Privacy Disclaimer</a></li>
+        </ul>
+        <p>
+        	&copy; 2011 Racing Vet | Proudly Australian Made.
+            <a href="#"><img src="images/social_icon_fb.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_tw.png" width="25" height="25" alt="" /></a>
+            <a href="#"><img src="images/social_icon_rss.png" width="25" height="25" alt="" /></a>
+        </p>
+    </div>
+    
+</div><!-- END #wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+/* CSS RESETS ================================= */
+html, body, div, span, applet, object, iframe,  h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline;}
+table						{border-collapse: collapse; border-spacing: 0;}
+caption, th, td				{text-align: left; font-weight: normal;}
+table, td, th				{vertical-align: middle;}
+a img						{border:none;}
+
+@font-face {
+	font-family: 'Museo300';
+	src: url('../type/Museo300-Regular.eot');
+	src: local('☺'), url('../type/Museo300-Regular.woff') format('woff'), url('../type/Museo300-Regular.ttf') format('truetype'), url('../type/Museo300-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo500';
+	src: url('../type/Museo500-Regular.eot');
+	src: local('☺'), url('../type/Museo500-Regular.woff') format('woff'), url('../type/Museo500-Regular.ttf') format('truetype'), url('../type/Museo500-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo700';
+	src: url('../type/Museo700-Regular.eot');
+	src: local('☺'), url('../type/Museo700-Regular.woff') format('woff'), url('../type/Museo700-Regular.ttf') format('truetype'), url('../type/Museo700-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MuseoSans';
+	src: url('../type/MuseoSans.eot');
+	src: local('☺'), url('../type/MuseoSans.woff') format('woff'), url('../type/MuseoSans.ttf') format('truetype'), url('../type/MuseoSans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Museo100';
+	src: url('../type/Museo100-Regular.eot');
+	src: local('☺'), url('../type/Museo100-Regular.woff') format('woff'), url('../type/Museo100-Regular.ttf') format('truetype'), url('../type/Museo100-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GLOBAL STYLE ================================ */
+body						{font: normal 12px Arial, sans-serif; line-height: normal; text-decoration: none; text-align: center; color: #636466; background: #fff; margin: 0; padding: 0;}
+body						{background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #ffffff), color-stop(0.60, #c8e9f2)); background-image: -moz-linear-gradient(center top, #ffffff 0%, #c8e9f2 60%);}
+a							{text-decoration: none; outline: none;}
+a:hover						{text-decoration: underline;}
+h1, h2, h3, h4, h5, h6, p,
+ul, table					{margin: 0 0 15px;}
+h1							{font-size: 24px; font-family: Museo700, Arial, sans-serif;}
+h2							{font-size: 18px; font-family: Museo700, Arial, sans-serif;}
+h3							{font-size: 14px; font-family: Museo700, Arial, sans-serif;}
+h4, h5, h6					{font-size: 12px; font-family: Museo700, Arial, sans-serif;}
+strong						{font-weight: bold;}
+em							{font-style: italic;}
+input, select, textarea		{font-family: Arial, Helvetica, sans-serif}
+
+/* UTILITIES =================================== */
+.clearfix:after					{visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+* html .clearfix				{zoom: 1;} /* IE6 */
+*+html .clearfix				{zoom: 1;} /* IE7 */
+
+.clear							{clear: both;}
+.center							{text-align: center;}
+
+/* MAIN ===================================== */
+#wrapper 						{width: 840px; text-align: left; margin: 0 auto;}
+#content						{padding: 20px 0 20px; background-color: #fff; overflow: hidden; box-shadow: 0px 0px 7px rgba(0,0,0,0.2); border-radius: 12px 12px 0 0;}
+.sidebar						{float: left; display: inline; width: 238px; margin: 0 0 0 40px; list-style-type: none;}
+.main-content					{float: right; display: inline; width: 500px; margin: 0 40px 0 0;}
+
+/* Main Nav ================================== */
+.menu-main-nav-container				{height: 69px; padding: 1px 0; background-color: #70cde3; text-align: center; border-radius: 0px 0px 12px 12px;}
+#menu-main-nav							{margin: 32px 0 0; list-style-type: none;}
+#menu-main-nav li						{display: inline;}
+#menu-main-nav li a						{float: left; display: inline; margin: 0 0 0 40px; padding: 0 0 0 20px; color: #e2f3f7; font: 18px Museo700, Arial, sans-serif; text-transform: uppercase; background: url(../images/star_icon.png) no-repeat left center;}
+#menu-main-nav li a:hover,
+#menu-main-nav li.current_page_item a	{color: #fff; text-decoration: none;}
+
+/* Branding */
+.branding						{clear: both; width: 747px; margin: 66px 0 40px 54px; overflow: hidden;}
+.branding img					{float: left; display: inline; height: auto;}
+.branding div					{float: right; display: inline; width: 295px;}
+.branding div h1				{margin: 0;}
+.branding div h1 a				{display: block; width: 279px; height: 192px; margin: 18px 0 26px -32px; background: url(../images/logo.png) no-repeat; text-indent: -9999px;}
+.branding div h2				{margin: 0px; font-size: 20px; color: #70cde3;}
+.branding div p					{}
+.branding div p.trays			{margin: 13px 0 25px; font-family: Museo700, Arial, sans-serif; color: #70cde3;}
+.branding div p.btn				{}
+.branding div p.btn a			{display: block; width: 200px; padding: 14px 0; text-align: center; background-color: #70cde3; color: #fff; font-size: 20px; font-family: Museo700, Arial, sans-serif; text-transform: uppercase; border-radius: 3px;}
+.branding div p.btn a:hover		{}
+
+/* Branding Inner */
+.branding-inner					{clear: both; margin: 7px 8px 9px; overflow: hidden;}
+.branding-inner a				{display: block; padding: 12px 20px 0; overflow: hidden;}
+.branding-inner a:hover			{background-color: #f4de07; text-decoration: none;}
+.branding-inner img				{float: left; display: inline; margin: 0 28px 0 90px;}
+.branding-inner div				{float: left; display: inline; width: 340px;}
+.branding-inner div .logo		{width: 164px; height: 112px; margin: 0 0 10px -8px; background: url(../images/logo_branding_inner.png) no-repeat; text-indent: -9999px;}
+.branding-inner div .slogan		{margin: 0px; font-size: 20px; color: #70cde3; font-family: Museo700, Arial, sans-serif;}
+.branding-inner div .desc		{margin: 4px 0 0; color: #000;}
+
+/* My Cart */
+.my-cart						{margin: 0; padding: 10px 50px 10px 0; text-align: right;}
+.my-cart a						{color: #636466;}
+
+/* Sidebar ========================================== */
+.widget							{margin-bottom: 18px;}
+
+#info							{}
+#info h1						{width: 144px; height: 98px; margin: 0 0 14px 0; background: url(../images/logo_inner.png) no-repeat; text-indent: -9999px;}
+#info h2						{margin: 0px; font-size: 20px; color: #70cde3;}
+#info p							{margin: 8px 0 0; font-family: Museo700, Arial, sans-serif; color: #70cde3;}
+#info p.btn						{margin-top: 15px;}
+#info p.btn a					{display: block; width: 200px; padding: 13px 0; text-align: center; background-color: #70cde3; color: #fff; font-size: 18px; font-family: Museo700, Arial, sans-serif; text-transform: uppercase; border-radius: 3px;}
+
+#newsletter						{margin: 0 35px 45px 0; padding: 10px 12px; background-color: #e2f3f7; border-radius: 3px; position: relative;}
+#newsletter h2 					{font-size: 14px; text-transform: uppercase; color: #70cde3;}
+#newsletter p 					{}
+#newsletter input 				{width: 155px; margin-bottom: 7px; padding: 5px 10px; background-color: #f5fbfd; border: none; color: #70cde3; border-radius: 5px;}
+#newsletter a 					{display: block; width: 165px; padding: 3px 30px 3px 7px; background: #70cde3 url(../images/bullet_arrow.png) no-repeat 97% 50%; color: #fff; font-family: Museo700, Arial, sans-serif; position: absolute; bottom: -33px; left: 0px; border-radius: 2px;}
+
+
+/* Main Content ========================================== */
+.main-content h3				{font-size: 20px; color: #70cde3; font-family: Museo300, Arial, sans-serif;}
+.two-column						{-moz-column-count: 2; -webkit-column-count: 2; -moz-column-gap: 20px; -webkit-column-gap: 20px; column-count: 2; column-gap: 20px;}
+
+/* Contact Us */
+.contact-form					{}
+.contact-form p					{margin: 0 0 9px;}
+.contact-form p input			{width: 98%; padding: 5px 0px 5px 10px; background-color: #e2f3f7; border: none; border-radius: 5px; font-size: 12px; color: #636466;}
+.contact-form p textarea		{width: 98%; padding: 5px 0px 5px 10px; background-color: #e2f3f7; border: none; border-radius: 5px; font-size: 12px; color: #636466; height: 100px;}
+.contact-form p.two-col			{margin-left: -9px;}
+.contact-form p.two-col input	{width: 46%; margin-left: 9px;}
+.contact-form p.btn				{text-align: right;}
+.contact-form p.btn input		{width: 100px; padding-top: 2px; padding-bottom: 2px; background: #70cde3 url(../images/bullet_arrow.png) no-repeat 90% 50%; color: #fff; font-family: Museo700, Arial, sans-serif; text-align: left; cursor: pointer;}
+
+/* Cart/Product */
+.product						{overflow: hidden;}
+.product .thumb					{float: left; display: inline; width: 232px; height: auto; border: 3px solid #e2f3f7; border-radius: 5px;}
+.product .detail				{float: right; display: inline; width: 240px;}
+.product .detail p				{}
+.product .detail p.price		{font-size: 20px; color: #70CDE3; font-family: Museo300, Arial, sans-serif;}
+.product .detail p.highlight	{padding: 3px 10px; font-size: 15px; text-transform: uppercase; color: #fff; font-family: Museo300, Arial, sans-serif; background-color: #70CDE3; border-radius: 2px;}
+.product .detail p.add			{padding-right: 15px;}
+.product .detail p.add span		{font-size: 15px; color: #70CDE3; font-family: Museo300, Arial, sans-serif;}
+.product .detail p.add input	{float: right; display: inline; width: 100px; padding: 5px 0px 5px 10px; background-color: #e2f3f7; border: none; font-size: 12px; color: #636466;}
+.product .detail p.btn			{text-align: right; padding-right: 15px;}
+.product .detail p.btn input	{width: 110px; padding: 3px 30px 3px 7px; background: #70cde3 url(../images/bullet_arrow.png) no-repeat 95% 50%; border: none; text-align: left; color: #fff; font-family: Museo300, Arial, sans-serif; font-size: 12px; border-radius: 2px;}
+
+
+/* FOOTER 1 ===================================== */
+#footer									{clear: both; height: 39px; line-height: 39px; background-color: #70cde3; text-align: center; color: #e2f3f7; font-family: MuseoSans, Arial, sans-serif;}
+#footer .inner							{width: 840px; margin: 0 auto; text-align: left;}
+.menu-footer-nav-container				{float: left;}
+#menu-footer-nav						{margin: 0 0 0 0; list-style-type: none;}
+#menu-footer-nav li						{display: inline;}
+#menu-footer-nav li a					{float: left; display: inline; margin: 14px 0 0 7px; padding: 0 0 0 7px; line-height: 12px; color: #e2f3f7; text-transform: uppercase; border-left: 1px solid #e2f3f7;}
+#menu-footer-nav li a:hover,
+#menu-footer-nav li.current_page_item a	{color: #fff;}
+#menu-footer-nav li:first-child a		{border: none; margin-left: 0; padding-left: 0;}
+.copyright								{float: right; margin: 0;}
+
+/* IE Fixes */
+#content,
+.menu-main-nav-container,
+.branding div p.btn a,
+#info p.btn a,
+#newsletter,
+#newsletter input,
+.contact-form p textarea,
+.product .thumb,
+.product .detail p.highlight			{behavior: url(js/PIE.htc);}
+
